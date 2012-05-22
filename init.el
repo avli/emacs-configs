@@ -83,3 +83,6 @@
 ;; magit activation
 (add-to-list 'load-path "~/.emacs.d/lisp/magit-1.1.1")
 (require 'magit)
+
+;; emacs-for-python
+(load-file "~/.emacs.d/lisp/emacs-for-python/epy-init.el")
