@@ -8,7 +8,7 @@
 ;; solarized color theme support
 (add-to-list 'load-path "~/.emacs.d/lisp/color-theme-solarized")
 (require 'color-theme-solarized)
-(when (display-graphic-p) (color-theme-solarized-dark)) ; just for GUI
+(when (display-graphic-p) (color-theme-solarized-light)) ; just for GUI
 
 ;; disable backup
 (setq backup-inhibited t)
@@ -23,7 +23,7 @@
 (global-linum-mode 1)
 
 ;; disable toolbar
-(tool-bar-mode nil)
+(tool-bar-mode 0)
 
 ;; disable scrollbar
 (scroll-bar-mode nil)
