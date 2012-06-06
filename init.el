@@ -44,6 +44,12 @@
 		("\\.cmake\\'" . cmake-mode))
 	      auto-mode-alist))
 
+;; makefile mode
+(setq auto-mode-alist
+      (append '(("\\.mak\\'" . makefile-mode))
+	      auto-mode-alist))
+
+
 ;; org-mode
 ;; I've taken it from here: http://habrahabr.ru/post/105300/
 (require 'org-install)
