@@ -4,6 +4,7 @@
 ;; color theme setup
 (add-to-list 'load-path "~/.emacs.d/lisp/color-theme-6.6.0")
 (require 'color-theme)
+(color-theme-initialize)
 
 ;; solarized color theme support
 (add-to-list 'load-path "~/.emacs.d/lisp/color-theme-solarized")
