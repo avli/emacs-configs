@@ -4,11 +4,12 @@
 ;; color theme setup
 (add-to-list 'load-path "~/.emacs.d/lisp/color-theme-6.6.0")
 (require 'color-theme)
+(color-theme-initialize)
 
 ;; solarized color theme support
 (add-to-list 'load-path "~/.emacs.d/lisp/color-theme-solarized")
 (require 'color-theme-solarized)
-(when (display-graphic-p) (color-theme-solarized-dark)) ; just for GUI
+(when (display-graphic-p) (color-theme-solarized-light)) ; just for GUI
 
 ;; disable backup
 (setq backup-inhibited t)
@@ -85,4 +86,7 @@
 (require 'magit)
 
 ;; emacs-for-python
-(load-file "~/.emacs.d/lisp/emacs-for-python/epy-init.el")
+(load-file "~/.emacs.d/lisp/emacs-for-python-0.3/epy-init.el")
+
+;; switching on ido mode
+(require 'ido)
