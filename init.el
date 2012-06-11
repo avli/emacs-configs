@@ -90,3 +90,9 @@
 ;; magit activation
 (add-to-list 'load-path "~/.emacs.d/lisp/magit-1.1.1")
 (require 'magit)
+
+;; emacs-for-python
+(load-file "~/.emacs.d/lisp/emacs-for-python-0.3/epy-init.el")
+
+;; switching on ido mode
+(require 'ido)
