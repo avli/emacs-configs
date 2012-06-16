@@ -9,7 +9,7 @@
 ;; solarized color theme support
 (add-to-list 'load-path "~/.emacs.d/lisp/color-theme-solarized")
 (require 'color-theme-solarized)
-(when (display-graphic-p) (color-theme-solarized-light)) ; just for GUI
+(when (display-graphic-p) (color-theme-standard)) ; just for GUI
 
 ;; disable backup
 (setq backup-inhibited t)
