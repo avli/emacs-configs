@@ -96,3 +96,7 @@
 
 ;; switching on ido mode
 (require 'ido)
+
+;; IRC client
+(add-to-list 'load-path "~/.emacs.d/lisp/erc/share/site-lisp/erc")
+(require 'erc)
