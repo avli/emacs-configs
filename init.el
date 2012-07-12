@@ -23,6 +23,9 @@
 ;; enable linum mode
 (global-linum-mode 1)
 
+;; column numbers mode
+(column-number-mode 1)
+
 ;; disable toolbar
 (tool-bar-mode 0)
 
