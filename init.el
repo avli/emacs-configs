@@ -33,7 +33,7 @@
 (tool-bar-mode 0)
 
 ;; disable scrollbar
-(scroll-bar-mode nil)
+(scroll-bar-mode 0)
 
 ;; disable splash screen
 (setq inhibit-splash-screen t)
