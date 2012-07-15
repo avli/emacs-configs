@@ -1,6 +1,9 @@
 ;; adding custom plugins path to load-path
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
+;; openSUSE fix
+(require 'delsel)
+
 ;; color theme setup
 (add-to-list 'load-path "~/.emacs.d/lisp/color-theme-6.6.0")
 (require 'color-theme)
