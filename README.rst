@@ -25,6 +25,12 @@ Emacs*font: Monospace-10
 
 Don't forget to merge the settings with `xrdb`.
 
+Distribution Specific Notes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In all distributions, that uses Python 3 by default the `PYMACS_PYTHON` environment must be set to
+`python2`.
+
 Useful Links
 ------------
 
