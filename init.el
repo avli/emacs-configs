@@ -106,3 +106,14 @@
 ;; IRC client
 (add-to-list 'load-path "~/.emacs.d/lisp/erc/share/site-lisp/erc")
 (require 'erc)
+
+;; Haskell mode
+;; see documentation on https://github.com/haskell/haskell-mode
+(load "~/.emacs.d/lisp/haskell-mode/haskell-site-file")
+
+(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
+
+;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
+;;(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
+
