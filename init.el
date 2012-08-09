@@ -117,3 +117,10 @@
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
 ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
 
+;; Clojure langiage support
+(add-to-list 'load-path "~/.emacs.d/lisp/technomancy-clojure-mode")
+(require 'clojure-mode)
+(require 'paredit)
+(defun turn-on-paredit () (paredit-mode 1))
+(add-hook 'clojure-mode-hook 'turn-on-paredit)
+
