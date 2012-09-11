@@ -124,3 +124,7 @@
 (defun turn-on-paredit () (paredit-mode 1))
 (add-hook 'clojure-mode-hook 'turn-on-paredit)
 
+;; dirtree plugin
+(add-to-list 'load-path "~/.emacs.d/lisp/dirtree")
+(require 'dirtree)
+
