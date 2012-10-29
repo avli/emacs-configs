@@ -12,7 +12,7 @@
 ;; solarized color theme support
 (add-to-list 'load-path "~/.emacs.d/lisp/color-theme-solarized")
 (require 'color-theme-solarized)
-(when (display-graphic-p) (color-theme-standard)) ; just for GUI
+(when (display-graphic-p) (color-theme-charcoal-black)) ; just for GUI
 
 ;; disable backup
 (setq backup-inhibited t)
@@ -127,4 +127,49 @@
 ;; dirtree plugin
 (add-to-list 'load-path "~/.emacs.d/lisp/dirtree")
 (require 'dirtree)
+
+;; cedet settings
+;; the code below is based on Alex Ott's cedet config
+;; please, see https://gist.github.com/3930120
+
+(require 'cedet)
+(require 'semantic)
+(require 'semantic/bovine/c)
+(require 'semantic/bovine/gcc)
+(require 'semantic/db)
+(require 'semantic/ia)
+(require 'semantic/decorate/include)
+(require 'semantic/lex-spp)
+
+;; customisation of modes
+(defun alexott/cedet-hook ()
+  (local-set-key [(control return)] 'semantic-ia-complete-symbol-menu)
+  (local-set-key "\C-c?" 'semantic-ia-complete-symbol)
+  ;;
+  (local-set-key "\C-c>" 'semantic-complete-analyze-inline)
+  (local-set-key "\C-c=" 'semantic-decoration-include-visit)
+
+  (local-set-key "\C-cj" 'semantic-ia-fast-jump)
+  (local-set-key "\C-cq" 'semantic-ia-show-doc)
+  (local-set-key "\C-cs" 'semantic-ia-show-summary)
+  (local-set-key "\C-cp" 'semantic-analyze-proto-impl-toggle)
+  (local-set-key (kbd "C-c <left>") 'semantic-tag-folding-fold-block)
+  (local-set-key (kbd "C-c <right>") 'semantic-tag-folding-show-block)
+  )
+(add-hook 'c-mode-common-hook 'alexott/cedet-hook)
+(add-hook 'lisp-mode-hook 'alexott/cedet-hook)
+(add-hook 'scheme-mode-hook 'alexott/cedet-hook)
+(add-hook 'emacs-lisp-mode-hook 'alexott/cedet-hook)
+(add-hook 'erlang-mode-hook 'alexott/cedet-hook)
+
+(defun alexott/c-mode-cedet-hook ()
+  (local-set-key "\C-ct" 'eassist-switch-h-cpp)
+  (local-set-key "\C-xt" 'eassist-switch-h-cpp)
+  (local-set-key "\C-ce" 'eassist-list-methods)
+  (local-set-key "\C-c\C-r" 'semantic-symref)
+  )
+(add-hook 'c-mode-common-hook 'alexott/c-mode-cedet-hook)
+
+(global-ede-mode 1)
+(semantic-mode 1)
 
