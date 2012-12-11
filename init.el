@@ -128,3 +128,7 @@
 (add-to-list 'load-path "~/.emacs.d/lisp/dirtree")
 (require 'dirtree)
 
+;; ruby mode options
+(add-to-list 'auto-mode-alist '("\\.rb\\'" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.thor\\'" . ruby-mode))
+(add-hook 'ruby-mode-hook (lambda () (local-set-key "\r" 'newline-and-indent)))
