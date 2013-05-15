@@ -132,3 +132,13 @@
 (add-to-list 'auto-mode-alist '("\\.rb\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.thor\\'" . ruby-mode))
 (add-hook 'ruby-mode-hook (lambda () (local-set-key "\r" 'newline-and-indent)))
+
+;; Erlang support
+(add-to-list 'load-path "/usr/local/Cellar/erlang/R15B03-1/lib/erlang/lib/tools-2.6.8/emacs/")
+(setq erlang-root-dir "/usr/local/Cellar/erlang/R15B03-1/")
+(add-to-list 'exec-path "/usr/local/Cellar/erlang/R15B03-1/bin")
+(require 'erlang-start)
+(add-to-list 'ac-modes 'erlang-mode)
+
+;; YAML support
+(require 'yaml-mode)
