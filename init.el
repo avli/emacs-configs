@@ -142,3 +142,9 @@
 
 ;; YAML support
 (require 'yaml-mode)
+
+;; SLIME
+(setq inferior-lisp-program "/usr/local/bin/clisp")
+(add-to-list 'load-path "~/.emacs.d/lisp/slime-2013-04-05")
+(require 'slime)
+(slime-setup)
