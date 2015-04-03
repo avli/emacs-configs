@@ -1,2 +1,8 @@
-*elc
-*pyc
+# Compiled
+*.elc
+
+# Packaging
+.cask
+
+elpa/*
+places
