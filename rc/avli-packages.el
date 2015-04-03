@@ -6,9 +6,10 @@
 
 (defvar avli/package-list
   '(color-theme-solarized
+	better-defaults
     company
     anaconda-mode
-    flycheck-mode
+    flycheck
     magit
     clojure-mode
     cider

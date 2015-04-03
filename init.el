@@ -12,6 +12,7 @@
 (require 'avli-text)
 (require 'avli-latex)
 (require 'avli-lisp)
+(require 'avli-erlang)
 (require 'avli-russian)
 
 (provide 'init)
