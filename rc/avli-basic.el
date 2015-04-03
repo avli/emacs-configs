@@ -9,6 +9,8 @@
 
 (menu-bar-mode 1)
 
+(setq auto-save-default nil)
+
 (windmove-default-keybindings)
 
 (set-default 'tab-width 4)
