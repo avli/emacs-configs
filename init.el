@@ -14,6 +14,8 @@
 (require 'avli-elisp)
 (require 'avli-clojure)
 (require 'avli-erlang)
+(require 'avli-shell)
+(require 'avli-term)
 (require 'avli-speedbar)
 (require 'avli-russian)
 
