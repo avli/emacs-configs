@@ -17,7 +17,8 @@
     cider
     elixir-mode
     alchemist
-    paredit)
+    paredit
+    sr-speedbar)
   )
 
 (defun avli/package-install (package)

@@ -16,7 +16,6 @@
 (require 'avli-erlang)
 (require 'avli-shell)
 (require 'avli-term)
-(require 'avli-speedbar)
 (require 'avli-russian)
 
 (provide 'init)
