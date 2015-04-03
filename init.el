@@ -14,6 +14,8 @@
 (require 'avli-elisp)
 (require 'avli-clojure)
 (require 'avli-erlang)
+(require 'avli-speedbar)
 (require 'avli-russian)
 
 (provide 'init)
+;;; init.el ends here
