@@ -11,7 +11,8 @@
 (require 'avli-python)
 (require 'avli-text)
 (require 'avli-latex)
-(require 'avli-lisp)
+(require 'avli-elisp)
+(require 'avli-clojure)
 (require 'avli-erlang)
 (require 'avli-russian)
 
