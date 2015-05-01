@@ -1,5 +1,6 @@
 (defun avli/elisp-mode-hook ()
-  (paredit-mode 1)
+  (smartparens-strict-mode 1)
+  (rainbow-delimiters-mode 1)
   (local-set-key "\C-cf" 'find-function)
   (local-set-key "\C-ck" 'find-function-on-key)
   )

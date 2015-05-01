@@ -4,9 +4,10 @@
   )
 
 (defun avli/prog-mode-hook ()
-  (maybe-linum-mode)
+;  (maybe-linum-mode)
   (hl-line-mode 1)
-  (flycheck-mode)
+  (flycheck-mode 1)
+  (smartparens-mode 1)
 
   (local-set-key "\C-c:" 'uncomment-region)
   (local-set-key "\C-c;" 'comment-region)

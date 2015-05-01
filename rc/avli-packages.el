@@ -6,19 +6,25 @@
 (package-initialize)
 
 (defvar avli/package-list
-  '(color-theme-solarized
+  '(
 	better-defaults
-    company
+	color-theme-solarized
+	lush-theme
+	projectile
+	rainbow-delimeters
+    alchemist
     anaconda-mode
+    cider
+    clojure-mode
+    company
+    elixir-mode
+    erlang
     flycheck
     magit
     multi-term
-    clojure-mode
-    cider
-    elixir-mode
-    alchemist
     paredit
-    sr-speedbar)
+    smartparens
+	)
   )
 
 (defun avli/package-install (package)
