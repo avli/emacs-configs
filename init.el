@@ -15,6 +15,7 @@
 (require 'avli-clojure)
 (require 'avli-erlang)
 (require 'avli-magit)
+(require 'avli-smartparens)
 (require 'avli-shell)
 (require 'avli-term)
 (require 'avli-russian)
