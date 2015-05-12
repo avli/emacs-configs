@@ -12,6 +12,7 @@
 (require 'avli-text)
 (require 'avli-latex)
 (require 'avli-elisp)
+(require 'avli-js)
 (require 'avli-clojure)
 (require 'avli-erlang)
 (require 'avli-magit)

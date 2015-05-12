@@ -17,13 +17,16 @@
     cider
     clojure-mode
     company
+    company-tern
     elixir-mode
     erlang
     flycheck
+    js3-mode
     magit
     multi-term
     paredit
     smartparens
+    tern-mode
 	)
   )
 
