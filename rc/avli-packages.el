@@ -19,6 +19,7 @@
     company
     company-tern
     elixir-mode
+    emmet-mode
     erlang
     flycheck
     js3-mode
@@ -27,6 +28,7 @@
     paredit
     smartparens
     tern-mode
+    web-mode
 	)
   )
 

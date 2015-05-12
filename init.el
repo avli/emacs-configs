@@ -12,6 +12,7 @@
 (require 'avli-text)
 (require 'avli-latex)
 (require 'avli-elisp)
+(require 'avli-html)
 (require 'avli-js)
 (require 'avli-clojure)
 (require 'avli-erlang)
@@ -20,6 +21,7 @@
 (require 'avli-shell)
 (require 'avli-term)
 (require 'avli-russian)
+(require 'avli-custom)
 
 (provide 'init)
 ;;; init.el ends here

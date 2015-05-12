@@ -9,4 +9,6 @@
 (global-set-key (kbd "<f5>") 'avli/lights-off)
 (global-set-key (kbd "<f6>") 'avli/lights-on)
 
+(global-set-key (kbd "C-x g") 'magit-status)
+
 (provide 'avli-key-bindings)
