@@ -16,6 +16,7 @@
 (require 'avli-js)
 (require 'avli-clojure)
 (require 'avli-erlang)
+(require 'avli-google-this)
 (require 'avli-magit)
 (require 'avli-smartparens)
 (require 'avli-shell)

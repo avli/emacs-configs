@@ -22,6 +22,7 @@
     emmet-mode
     erlang
     flycheck
+    google-this
     js3-mode
     magit
     multi-term
