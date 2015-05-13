@@ -3,7 +3,6 @@
   (rainbow-delimiters-mode 1)
   )
 
-
-(add-hook 'clojure-mode 'avli/clojure-mode-hook)
+(add-hook 'clojure-mode-hook 'avli/clojure-mode-hook)
 
 (provide 'avli-clojure)
