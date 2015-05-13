@@ -13,7 +13,7 @@
 	color-theme-solarized
 	lush-theme
 	projectile
-	rainbow-delimeters
+	rainbow-delimiters
     alchemist
     anaconda-mode
     cider
