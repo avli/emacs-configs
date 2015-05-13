@@ -8,3 +8,6 @@ elpa/*
 places
 backups/*
 auto-save-list
+
+# Say thank you to projectile for this
+projectile-bookmarks.eld

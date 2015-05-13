@@ -5,6 +5,9 @@
 
 (package-initialize)
 
+(unless package-archive-contents
+  (package-refresh-contents))
+
 (defvar avli/package-list
   '(
 	better-defaults
