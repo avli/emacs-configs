@@ -23,6 +23,7 @@
     erlang
     flycheck
     google-this
+    google-translate
     js3-mode
     magit
     multi-term
