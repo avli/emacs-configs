@@ -32,6 +32,7 @@
     paredit
     smartparens
     tern-mode
+    virtualenvwrapper
     web-mode
 	)
   )
