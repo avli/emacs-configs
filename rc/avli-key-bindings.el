@@ -11,4 +11,20 @@
 
 (global-set-key (kbd "C-x g") 'magit-status)
 
+(defun avli/new-line-and-indent-above ()
+  (interactive)
+  (previous-line)
+  (end-of-line)
+  (newline-and-indent)
+  )
+
+(defun avli/new-line-and-indent-below ()
+  (interactive)
+  (end-of-line)
+  (newline-and-indent)
+  )
+
+(global-set-key (kbd "C-o") 'avli/new-line-above-and-indent)
+(global-set-key (kbd "C-c o") 'avli/new-line-and-indent-below)
+
 (provide 'avli-key-bindings)
