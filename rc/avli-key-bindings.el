@@ -24,7 +24,7 @@
   (newline-and-indent)
   )
 
-(global-set-key (kbd "C-o") 'avli/new-line-above-and-indent)
+(global-set-key (kbd "C-o") 'avli/new-line-and-indent-above)
 (global-set-key (kbd "C-c o") 'avli/new-line-and-indent-below)
 
 (provide 'avli-key-bindings)
