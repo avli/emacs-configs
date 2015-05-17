@@ -1,7 +1,10 @@
-;; Make windmove work in org-mode:
-(add-hook 'org-shiftup-final-hook 'windmove-up)
-(add-hook 'org-shiftleft-final-hook 'windmove-left)
-(add-hook 'org-shiftdown-final-hook 'windmove-down)
-(add-hook 'org-shiftright-final-hook 'windmove-right)
+;; Resolve conflicts with windmove
+(setq org-replace-disputed-keys t)
+
+;; Don't allow to close tasks when there are unfinished subtasks
+(setq org-enforce-todo-dependencies t)
+
+;; Attach timestamp to each closed task
+(setq org-log-done 'time)
 
 (provide 'avli-org)
