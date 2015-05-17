@@ -27,4 +27,6 @@
 (global-set-key (kbd "C-o") 'avli/new-line-and-indent-above)
 (global-set-key (kbd "C-c o") 'avli/new-line-and-indent-below)
 
+(global-set-key (kbd "C-c a") 'org-agenda)
+
 (provide 'avli-key-bindings)

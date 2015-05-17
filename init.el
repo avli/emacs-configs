@@ -22,8 +22,10 @@
 (require 'avli-smartparens)
 (require 'avli-shell)
 (require 'avli-term)
+(require 'avli-org)
 (require 'avli-russian)
 (require 'avli-custom)
+
 
 (provide 'init)
 ;;; init.el ends here
