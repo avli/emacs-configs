@@ -11,6 +11,8 @@
 
 (global-set-key (kbd "C-x g") 'magit-status)
 
+(global-set-key (kbd "C-c TAB") 'company-complete)
+
 (defun avli/new-line-and-indent-above ()
   (interactive)
   (previous-line)
