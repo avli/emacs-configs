@@ -27,6 +27,7 @@
     google-this
     google-translate
     js3-mode
+    nodejs-repl
     magit
     multi-term
     paredit
