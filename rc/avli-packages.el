@@ -14,6 +14,7 @@
 	lush-theme
 	projectile
 	rainbow-delimiters
+    rainbow-mode
     alchemist
     anaconda-mode
     cider
