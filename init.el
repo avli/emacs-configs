@@ -23,6 +23,7 @@
 (require 'avli-shell)
 (require 'avli-term)
 (require 'avli-org)
+(require 'avli-yasnippet)
 (require 'avli-russian)
 (require 'avli-custom)
 
