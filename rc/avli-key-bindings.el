@@ -35,4 +35,15 @@
 (global-set-key (kbd "C-c i") 'todo-insert-item)
 (global-set-key (kbd "C-c j") 'todo-jump-to-category)
 
+;; This fixes windmove keys in tmux for me
+(global-set-key "\M-[1;2A" 'windmove-up)
+(global-set-key "\M-[1;2B" 'windmove-down)
+(global-set-key "\M-[1;2C" 'windmove-right)
+(global-set-key "\M-[1;2D" 'windmove-left)
+
+(global-set-key "\M-[1;6A" 'enlarge-window)
+(global-set-key "\M-[1;6B" 'shrink-window)
+(global-set-key "\M-[1;6C" 'enlarge-window-horizontally)
+(global-set-key "\M-[1;6D" 'shrink-window-horizontally)
+
 (provide 'avli-key-bindings)

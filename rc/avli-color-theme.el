@@ -20,6 +20,6 @@
 
 (load-theme 'lush t)
 
-(set-face-attribute 'default nil :font "DejaVu Sans Mono-12")
+(setq default-frame-alist '((font . "DejaVu Sans Mono-12")))
 
 (provide 'avli-color-theme)
