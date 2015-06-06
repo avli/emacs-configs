@@ -31,4 +31,8 @@
 
 (global-set-key (kbd "C-c a") 'org-agenda)
 
+(global-set-key (kbd "C-c t") 'todo-show)
+(global-set-key (kbd "C-c i") 'todo-insert-item)
+(global-set-key (kbd "C-c j") 'todo-jump-to-category)
+
 (provide 'avli-key-bindings)
