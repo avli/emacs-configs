@@ -22,6 +22,7 @@
     company
     company-tern
     elixir-mode
+    evil
     emmet-mode
     erlang
     flycheck
