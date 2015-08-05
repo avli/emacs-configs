@@ -22,6 +22,7 @@
 (require 'avli-smartparens)
 (require 'avli-shell)
 (require 'avli-term)
+(require 'avli-ess)
 (require 'avli-org)
 (require 'avli-yasnippet)
 (require 'avli-russian)
