@@ -18,7 +18,7 @@
 ;;   (enable-theme 'solarized)
 ;;   )
 
-(load-theme 'lush t)
+(load-theme 'birds-of-paradise-plus t)
 
 (setq default-frame-alist '((font . "DejaVu Sans Mono-12")))
 

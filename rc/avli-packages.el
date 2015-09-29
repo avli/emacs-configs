@@ -18,6 +18,7 @@
     alchemist
     anaconda-mode
     cider
+    birds-of-paradise-plus-theme
     clojure-mode
     company
     company-tern

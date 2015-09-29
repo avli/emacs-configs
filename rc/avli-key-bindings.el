@@ -13,21 +13,26 @@
 
 (global-set-key (kbd "C-c TAB") 'company-complete)
 
-(defun avli/new-line-and-indent-above ()
+;; These two functions borrowed from
+;; http://stackoverflow.com/questions/2173324/emacs-equivalents-of-vims-dd-o-o
+(defun vi-open-line-above ()
+  "Insert a newline above the current line and put point at beginning."
   (interactive)
-  (previous-line)
-  (end-of-line)
-  (newline-and-indent)
-  )
+  (unless (bolp)
+    (beginning-of-line))
+  (newline)
+  (forward-line -1)
+  (indent-according-to-mode))
 
-(defun avli/new-line-and-indent-below ()
+(defun vi-open-line-below ()
+  "Insert a newline below the current line and put point at beginning."
   (interactive)
-  (end-of-line)
-  (newline-and-indent)
-  )
+  (unless (eolp)
+    (end-of-line))
+  (newline-and-indent))
 
-(global-set-key (kbd "C-o") 'avli/new-line-and-indent-above)
-(global-set-key (kbd "C-c o") 'avli/new-line-and-indent-below)
+(global-set-key (kbd "C-o") 'vi-open-line-above)
+(global-set-key (kbd "C-c o") 'vi-open-line-below)
 
 (global-set-key (kbd "C-c a") 'org-agenda)
 
