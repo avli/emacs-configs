@@ -16,6 +16,7 @@
 	rainbow-delimiters
     rainbow-mode
     alchemist
+    ample-theme
     anaconda-mode
     cider
     birds-of-paradise-plus-theme
