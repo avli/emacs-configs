@@ -18,8 +18,8 @@
 ;;   (enable-theme 'solarized)
 ;;   )
 
-(load-theme 'birds-of-paradise-plus t)
+(load-theme 'ample 't)
 
-(setq default-frame-alist '((font . "DejaVu Sans Mono-12")))
+(setq default-frame-alist '((font . "DejaVu Sans Mono for Powerline-12")))
 
 (provide 'avli-color-theme)
