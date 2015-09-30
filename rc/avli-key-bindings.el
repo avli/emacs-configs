@@ -13,6 +13,8 @@
 
 (global-set-key (kbd "C-c TAB") 'company-complete)
 
+(define-key global-map (kbd "RET") 'newline-and-indent)
+
 ;; These two functions borrowed from
 ;; http://stackoverflow.com/questions/2173324/emacs-equivalents-of-vims-dd-o-o
 (defun vi-open-line-above ()
