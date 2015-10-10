@@ -14,27 +14,28 @@
 	lush-theme
 	projectile
 	rainbow-delimiters
-    rainbow-mode
     alchemist
     ample-theme
     anaconda-mode
-    cider
     birds-of-paradise-plus-theme
+    cider
     clojure-mode
     company
     company-tern
     elixir-mode
-    evil
     emmet-mode
     erlang
+    evil
     flycheck
+    fzf
     google-this
     google-translate
     js3-mode
-    nodejs-repl
     magit
     multi-term
+    nodejs-repl
     paredit
+    rainbow-mode
     smartparens
     tern-mode
     virtualenvwrapper

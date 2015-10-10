@@ -53,4 +53,6 @@
 (global-set-key "\M-[1;6C" 'enlarge-window-horizontally)
 (global-set-key "\M-[1;6D" 'shrink-window-horizontally)
 
+(global-set-key (kbd "C-t") 'fzf)
+
 (provide 'avli-key-bindings)
