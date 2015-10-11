@@ -5,7 +5,7 @@
 
 (defun avli/prog-mode-hook ()
 ;  (maybe-linum-mode)
-  (hl-line-mode 1)
+;  (hl-line-mode 1)
   (flycheck-mode 1)
   (smartparens-mode 1)
 
