@@ -1,8 +1,8 @@
-(if (display-graphic-p)
-    (set-frame-parameter nil 'background-mode 'dark)
-  (setq frame-background-mode 'dark))
+;; (if (display-graphic-p)
+;;     (set-frame-parameter nil 'background-mode 'dark)
+;;   (setq frame-background-mode 'dark))
 
-(load-theme 'solarized t)
+;; (load-theme 'solarized t)
 
 ;; (defun avli/lights-on ()
 ;;   (interactive)
@@ -18,7 +18,7 @@
 ;;   (enable-theme 'solarized)
 ;;   )
 
-;; (load-theme 'ample 't)
+(load-theme 'solarized-dark 't)
 
 (setq default-frame-alist '((font . "DejaVu Sans Mono for Powerline-12")))
 

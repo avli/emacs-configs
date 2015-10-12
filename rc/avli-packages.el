@@ -10,7 +10,7 @@
 (defvar avli/package-list
   '(
 	better-defaults
-	color-theme-solarized
+	solarized-theme
 	lush-theme
 	projectile
 	rainbow-delimiters
