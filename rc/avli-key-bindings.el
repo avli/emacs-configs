@@ -54,5 +54,6 @@
 (global-set-key "\M-[1;6D" 'shrink-window-horizontally)
 
 (global-set-key (kbd "C-t") 'fzf)
+(add-hook 'dired-mode-hook (lambda () (local-set-key (kbd "C-t C-t") 'fzf)))
 
 (provide 'avli-key-bindings)
