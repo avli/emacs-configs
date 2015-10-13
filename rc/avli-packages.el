@@ -12,8 +12,7 @@
 	better-defaults
 	solarized-theme
 	lush-theme
-	projectile
-	rainbow-delimiters
+    rainbow-delimiters
     alchemist
     ample-theme
     anaconda-mode
