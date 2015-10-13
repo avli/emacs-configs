@@ -9,6 +9,7 @@
 
 (defvar avli/package-list
   '(
+    ag
 	better-defaults
 	lush-theme
 	solarized-theme
