@@ -24,6 +24,7 @@
     elixir-mode
     emmet-mode
     erlang
+    ess
     evil
     flycheck
     fzf
