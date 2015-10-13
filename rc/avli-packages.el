@@ -10,15 +10,15 @@
 (defvar avli/package-list
   '(
 	better-defaults
-	solarized-theme
 	lush-theme
-    rainbow-delimiters
+	solarized-theme
     alchemist
     ample-theme
     anaconda-mode
     birds-of-paradise-plus-theme
     cider
     clojure-mode
+    color-theme-sanityinc-tomorrow
     company
     company-tern
     elixir-mode
@@ -32,9 +32,11 @@
     google-translate
     js3-mode
     magit
+    markdown-mode
     multi-term
     nodejs-repl
     paredit
+    rainbow-delimiters
     rainbow-mode
     smartparens
     tern-mode
