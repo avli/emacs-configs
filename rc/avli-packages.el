@@ -11,12 +11,9 @@
   '(
     ag
 	better-defaults
-	lush-theme
-	solarized-theme
+    solarized-theme
     alchemist
-    ample-theme
     anaconda-mode
-    birds-of-paradise-plus-theme
     cider
     clojure-mode
     color-theme-sanityinc-tomorrow
@@ -26,7 +23,6 @@
     emmet-mode
     erlang
     ess
-    evil
     flycheck
     fzf
     google-this
@@ -36,7 +32,6 @@
     markdown-mode
     multi-term
     nodejs-repl
-    paredit
     rainbow-delimiters
     rainbow-mode
     smartparens
