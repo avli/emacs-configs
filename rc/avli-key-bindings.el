@@ -55,5 +55,6 @@
 
 (global-set-key (kbd "C-t") 'fzf)
 (add-hook 'dired-mode-hook (lambda () (local-set-key (kbd "C-t C-t") 'fzf)))
+(add-hook 'ibuffer-mode-hook (lambda () (local-set-key (kbd "C-t") 'fzf)))
 
 (provide 'avli-key-bindings)
