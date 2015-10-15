@@ -18,6 +18,7 @@
     clojure-mode
     color-theme-sanityinc-tomorrow
     company
+    company-anaconda
     company-tern
     elixir-mode
     emmet-mode
