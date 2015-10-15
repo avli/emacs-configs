@@ -33,6 +33,7 @@
     markdown-mode
     multi-term
     nodejs-repl
+    projectile
     rainbow-delimiters
     rainbow-mode
     smartparens

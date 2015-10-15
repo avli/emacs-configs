@@ -26,4 +26,6 @@
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+(projectile-global-mode 1)
+
 (provide 'avli-basic)
