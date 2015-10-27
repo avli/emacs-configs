@@ -10,7 +10,7 @@
 
 (require 'avli-packages)
 (require 'avli-basic)
-(require 'avli-color-theme)
+(require 'avli-ui)
 (require 'avli-key-bindings)
 (require 'avli-completion)
 (require 'avli-prog-mode)
