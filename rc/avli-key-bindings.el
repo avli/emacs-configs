@@ -59,4 +59,6 @@
 
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
+(ffap-bindings)
+
 (provide 'avli-key-bindings)
