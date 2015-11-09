@@ -41,6 +41,7 @@
     tern-mode
     virtualenvwrapper
     web-mode
+    yaml-mode
 	)
   )
 
