@@ -9,6 +9,7 @@
 
 (defvar avli/package-list
   '(
+    ace-jump-mode
     ag
 	better-defaults
     solarized-theme

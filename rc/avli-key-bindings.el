@@ -57,4 +57,6 @@
 (add-hook 'dired-mode-hook (lambda () (local-set-key (kbd "C-t C-t") 'fzf)))
 (add-hook 'ibuffer-mode-hook (lambda () (local-set-key (kbd "C-t") 'fzf)))
 
+(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+
 (provide 'avli-key-bindings)
