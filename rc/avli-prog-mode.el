@@ -2,14 +2,9 @@
   (when (not (display-graphic-p))
     (setq flycheck-check-syntax-automatically nil)))
 
-(defun linum-setup ()
-  (when (display-graphic-p)
-    (linum-mode 1)))
-
 (defun avli/prog-mode-hook ()
   (flycheck-mode 1)
   (flycheck-setup)
-  (linum-setup)
   (smartparens-mode 1)
 
   (local-set-key "\C-c:" 'uncomment-region)
