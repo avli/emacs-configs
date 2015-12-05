@@ -9,7 +9,7 @@
 (defun avli/prog-mode-hook ()
   (flycheck-mode 1)
   (flycheck-setup)
-  (linum-setup)
+;  (linum-setup)
   (smartparens-mode 1)
 
   (local-set-key "\C-c:" 'uncomment-region)

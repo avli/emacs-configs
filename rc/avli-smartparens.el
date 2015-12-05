@@ -13,6 +13,7 @@
 (sp-local-pair 'c++-mode "{" nil :post-handlers '((avli/create-newline-and-enter-sexp "RET")))
 (sp-local-pair 'c-mode "{" nil :post-handlers '((avli/create-newline-and-enter-sexp "RET")))
 (sp-local-pair 'java-mode "{" nil :post-handlers '((avli/create-newline-and-enter-sexp "RET")))
-;(sp-local-pair 'js3-mode "{" nil :post-handlers '((avli/create-newline-and-enter-sexp "RET")))
+
+(sp-use-paredit-bindings)
 
 (provide 'avli-smartparens)
