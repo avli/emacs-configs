@@ -38,6 +38,7 @@
     rainbow-delimiters
     rainbow-mode
     smartparens
+    smart-mode-line
     tern-mode
     virtualenvwrapper
     web-mode
