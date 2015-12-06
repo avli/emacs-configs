@@ -11,8 +11,7 @@
   '(
     ace-jump-mode
     ag
-    base16-theme
-	better-defaults
+    better-defaults
     solarized-theme
     alchemist
     anaconda-mode
