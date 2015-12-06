@@ -11,6 +11,7 @@
   '(
     ace-jump-mode
     ag
+    base16-theme
 	better-defaults
     solarized-theme
     alchemist
