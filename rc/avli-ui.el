@@ -1,10 +1,11 @@
-(load-theme 'sanityinc-tomorrow-bright 't)
+(load-theme 'cyberpunk 't)
 
-(setq default-frame-alist '((font . "Monaco-12")))
+(setq default-frame-alist '((font . "Menlo-12")))
 (setq-default cursor-type 'bar)
 
-;; Enable smart mode line
-(setq sml/no-confirm-load-theme t)
-(sml/setup)
+(set-face-attribute 'mode-line nil :box nil)
+(set-face-attribute 'mode-line-inactive nil :box nil)
+
+(set-variable 'linum-format "  ")
 
 (provide 'avli-ui)

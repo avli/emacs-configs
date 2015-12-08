@@ -12,6 +12,7 @@
     ace-jump-mode
     ag
     better-defaults
+    cyberpunk-theme
     solarized-theme
     alchemist
     anaconda-mode
@@ -38,7 +39,6 @@
     rainbow-delimiters
     rainbow-mode
     smartparens
-    smart-mode-line
     tern-mode
     virtualenvwrapper
     web-mode
