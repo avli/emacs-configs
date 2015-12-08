@@ -4,7 +4,6 @@
 
 (defun avli/prog-mode-hook ()
   (smartparens-mode 1)
-  (linum-mode t)
 
   (local-set-key "\C-c:" 'uncomment-region)
   (local-set-key "\C-c;" 'comment-region)
