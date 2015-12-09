@@ -16,6 +16,8 @@
 (set-face-attribute 'mode-line nil :box nil)
 (set-face-attribute 'mode-line-inactive nil :box nil)
 
+(set-face-attribute 'linum nil :background "black")
+
 (require 'term)
 (set-face-attribute 'term-color-black nil :background "black")
 
