@@ -16,6 +16,9 @@
 (set-face-attribute 'mode-line nil :box nil)
 (set-face-attribute 'mode-line-inactive nil :box nil)
 
+(require 'term)
+(set-face-attribute 'term-color-black nil :background "black")
+
 (set-variable 'linum-format "  ")
 
 (provide 'avli-ui)
