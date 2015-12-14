@@ -1,9 +1,20 @@
-(load-theme 'sanityinc-tomorrow-bright 't)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/third-party/blackboard-theme")
+(load-theme 'blackboard 't)
 
+(set-face-attribute 'mode-line nil
+                    :foreground "Black"
+                    :background "DarkOrange"
+                    :box nil)
+
+(require 'company)
+(set-face-attribute 'company-tooltip nil :background "grey")
+
+(powerline-default-theme)
+(setq powerline-default-separator 'slant)
 
 (cond
  ((string-equal system-type "darwin")
-  (setq default-frame-alist '((font . "Monaco-12"))))
+  (setq default-frame-alist '((font . "DejaVu Sans Mono-12"))))
  ((string-equal system-type "gnu/linux")
   ((setq default-frame-alist '((font . "DejaVu Sans Mono-12"))))))
 
