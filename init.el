@@ -31,7 +31,6 @@
 (require 'avli-term)
 (require 'avli-ess)
 (require 'avli-org)
-(require 'avli-yasnippet)
 (require 'avli-russian)
 (require 'avli-custom)
 
