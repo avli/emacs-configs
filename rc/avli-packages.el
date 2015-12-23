@@ -33,7 +33,6 @@
     markdown-mode
     multi-term
     nodejs-repl
-    powerline
     projectile
     rainbow-delimiters
     rainbow-mode
