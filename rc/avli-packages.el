@@ -30,6 +30,7 @@
     fzf
     google-this
     google-translate
+    ido-vertical-mode
     js3-mode
     magit
     markdown-mode
