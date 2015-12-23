@@ -1,4 +1,4 @@
-(set-default 'shell-command "/bin/bash")
+(set-default 'shell-file-name "/bin/bash")
 
 ;; We set tab-width to display as 4 spaces globally, however that
 ;; option breaks shell output. To fix it we set tab-width to be 8
