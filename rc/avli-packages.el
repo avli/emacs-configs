@@ -12,13 +12,10 @@
     ace-jump-mode
     ag
     better-defaults
-    cyberpunk-theme
-    solarized-theme
     alchemist
     anaconda-mode
     cider
     clojure-mode
-    color-theme-sanityinc-tomorrow
     company
     company-anaconda
     company-tern
@@ -45,6 +42,7 @@
     virtualenvwrapper
     web-mode
     yaml-mode
+    zenburn-theme
 	)
   )
 
