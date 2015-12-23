@@ -1,24 +1,17 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/third-party/blackboard-theme")
-(load-theme 'blackboard 't)
+(load-theme 'cyberpunk 't)
 
 (set-face-attribute 'mode-line nil
-                    :foreground "Black"
-                    :background "DarkOrange"
                     :box nil)
-
-(require 'company)
-(set-face-attribute 'company-tooltip nil :background "grey")
-
-(powerline-default-theme)
-(setq powerline-default-separator 'slant)
 
 (cond
  ((string-equal system-type "darwin")
-  (setq default-frame-alist '((font . "DejaVu Sans Mono-12"))))
+  (setq default-frame-alist '((font . "Menlo-12"))))
  ((string-equal system-type "gnu/linux")
   ((setq default-frame-alist '((font . "DejaVu Sans Mono-12"))))))
 
-(setq-default cursor-type 'bar)
+(setq-default cursor-type 'box)
+(set-face-attribute 'cursor nil :background "#96CBFE")
 (blink-cursor-mode 0)
 
 (global-hl-line-mode 1)
@@ -26,6 +19,8 @@
 
 (set-face-attribute 'mode-line nil :box nil)
 (set-face-attribute 'mode-line-inactive nil :box nil)
+
+(ido-vertical-mode 1)
 
 (require 'linum)
 (set-face-attribute 'linum nil :background "black")
