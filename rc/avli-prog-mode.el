@@ -11,6 +11,8 @@
 
   (local-set-key (kbd "<f8>") 'flycheck-mode)
 
+  (hl-line-mode 1)
+
   (setq-local truncate-lines t))
 
 (add-hook 'prog-mode-hook 'avli/prog-mode-hook)

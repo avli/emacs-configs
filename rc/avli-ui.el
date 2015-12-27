@@ -12,8 +12,6 @@
 
 (blink-cursor-mode 0)
 
-(global-hl-line-mode 1)
-
 (ido-vertical-mode 1)
 
 (provide 'avli-ui)
