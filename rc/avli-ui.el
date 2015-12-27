@@ -7,8 +7,6 @@
  ((string-equal system-type "gnu/linux")
   ((setq default-frame-alist '((font . "DejaVu Sans Mono-12"))))))
 
-(set-face-attribute 'mode-line nil :box nil)
-
 (require 'term)
 (set-face-attribute 'term-color-black nil :background "#000000")
 
