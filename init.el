@@ -1,38 +1,70 @@
+;;;;
+;; Packages
+;;;;
 
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
+;; Define package repositories
+(require 'package)
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("melpa" . "http://melpa.milkbox.net/packages/")))
+
+;; Load and activate Emacs packages
 (package-initialize)
 
-(setq avli-conf-dir (concat user-emacs-directory "rc"))
-(add-to-list 'load-path avli-conf-dir)
+;; If Emacs run the first time, download package repositories
+;; contents
+(unless package-archive-contents
+  (package-refresh-contents))
 
-(require 'avli-packages)
-(require 'avli-basic)
-(require 'avli-ui)
-(require 'avli-key-bindings)
-(require 'avli-completion)
-(require 'avli-prog-mode)
-(require 'avli-c++)
-(require 'avli-python)
-(require 'avli-text)
-(require 'avli-latex)
-(require 'avli-elisp)
-(require 'avli-html)
-(require 'avli-js)
-(require 'avli-clojure)
-(require 'avli-erlang)
-(require 'avli-google-this)
-(require 'avli-google-translate)
-(require 'avli-magit)
-(require 'avli-smartparens)
-(require 'avli-shell)
-(require 'avli-term)
-(require 'avli-ess)
-(require 'avli-org)
-(require 'avli-russian)
-(require 'avli-custom)
+;; The packages we want to install
+(defvar list-of-packages
+  '(;; Integration with Clojure REPL. Note, that if you want to use
+    ;; cider it is necessary to add necessary dependencies to your
+    ;; ~/.lein/profiles.clj file. I believe, it should looks like
+    ;;
+    ;; {:repl {:dependencies [[org.clojure/clojure "1.7.0"]
+    ;;                        [org.clojure/tools.nrepl "0.2.12"]]
+    ;;         :plugins [[cider/cider-nrepl "0.11.0-snapshot"]]}}
+    ;;         
+    ;; The versions may vary depend on Emacs cider version
+    cider
 
-(provide 'init)
-;;; init.el ends here
+    ;; Project navigation
+    projectile
+
+    ;; Colorful paranthesis. Useful in lisps
+    rainbow-delimiters
+
+    ;; Git integration
+    magit
+
+    ;; Making handling lisp expressions easier
+    paredit
+
+    ;; Apropriate color theme
+    color-theme-sanityinc-tomorrow))
+
+;; Install packages if not installed already
+(dolist (p list-of-packages)
+  (unless (package-installed-p p)
+    (package-install p)))
+
+;;;;
+;; Customization
+;;;;
+
+;; Add customizations directory to load path. This makes possible to
+;; load particular emacs lisp files from it
+(add-to-list 'load-path "~/.emacs.d/customizations")
+
+;; Load Emacs UI customizations. Here we set up color theme,
+;; enable/disable different interface elemenets and so on
+(load "ui.el")
+
+;; Customizations for easier navigation between files and buffers
+(load "navigation.el")
+
+;; Stuff doesn't hit other categories
+(load "misc.el")
+
+;; Language specific customizations
+(load "setup-clojure.el")
