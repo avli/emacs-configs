@@ -63,6 +63,9 @@
 ;; Customizations for easier navigation between files and buffers
 (load "navigation.el")
 
+;; More convinient editing
+(load "editing.el")
+
 ;; Stuff doesn't hit other categories
 (load "misc.el")
 

@@ -9,8 +9,8 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; Disable backups and auto save, use VCS instead!
-(setq-default backup-inhibited t)
-(setq-default auto-save-default nil)
+(setq backup-inhibited t)
+(setq auto-save-default nil)
 
 ;; comments
 (defun toggle-comment-on-line ()
