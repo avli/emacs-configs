@@ -24,7 +24,7 @@
     ;; {:repl {:dependencies [[org.clojure/clojure "1.7.0"]
     ;;                        [org.clojure/tools.nrepl "0.2.12"]]
     ;;         :plugins [[cider/cider-nrepl "0.11.0-snapshot"]]}}
-    ;;         
+    ;;
     ;; The versions may vary depend on Emacs cider version
     cider
 
@@ -41,7 +41,11 @@
     paredit
 
     ;; Apropriate color theme
-    color-theme-sanityinc-tomorrow))
+    color-theme-sanityinc-tomorrow
+
+    ;; Autocompletion for Emacs. May be annoying sometimes so let's
+    ;; use it only when it's necesary
+    company))
 
 ;; Install packages if not installed already
 (dolist (p list-of-packages)
@@ -69,5 +73,7 @@
 ;; Stuff doesn't hit other categories
 (load "misc.el")
 
-;; Language specific customizations
+;; Language-specific customizations
+
 (load "setup-clojure.el")
+(load "setup-elisp.el")
