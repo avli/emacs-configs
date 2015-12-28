@@ -9,3 +9,7 @@
 (setq exec-path (setq exec-path
                       (append '("/usr/local/bin") exec-path)))
 
+;; Because of GUI applications don't load ~/.bashrc file it is
+;; necessary to add extra paths manually
+(when (display-graphic-p)
+  (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH"))))
