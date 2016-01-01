@@ -12,6 +12,9 @@
 (setq backup-inhibited t)
 (setq auto-save-default nil)
 
+;; Show column numbers in mode line
+(column-number-mode 1)
+
 ;; comments
 (defun toggle-comment-on-line ()
   "comment or uncomment current line"
