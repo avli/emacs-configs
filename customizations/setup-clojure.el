@@ -13,3 +13,13 @@
 
 ;; Turn on autocompletion. Company co-operates nicely with cider
 (add-hook 'clojure-mode-hook 'company-mode)
+
+;;;;
+;; Clojure REPL
+;;;;
+
+;; Turn on company auto completion in Clojure REPL
+(add-hook 'cider-repl-mode-hook 'company-mode)
+
+;; Turn on paredit in Clojure REPL
+(add-hook 'cider-repl-mode-hook 'enable-paredit-mode)
