@@ -9,6 +9,13 @@
 (when (fboundp 'scroll-bar-mode)
   (scroll-bar-mode -1))
 
+;; Disable tool bar
+(tool-bar-mode -1)
+
+;; Show line numbers in GUI
+(when (display-graphic-p)
+  (global-linum-mode 1))
+
 ;; Set fonts for different OS
 (cond
  ((string-equal system-type "darwin")
@@ -24,3 +31,10 @@
 
 ;; Disable bell
 (setq ring-bell-function 'ignore)
+
+;; Cyberpunk theme tweaks
+(when (equal '(cyberpunk) custom-enabled-themes)
+  (progn
+    (set-face-attribute 'mode-line nil :box nil)
+    (set-face-attribute 'mode-line-inactive nil :box nil)
+    (set-face-attribute 'linum nil :foreground "grey42" :height 0.7)))
