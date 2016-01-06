@@ -33,7 +33,8 @@
 (setq ring-bell-function 'ignore)
 
 ;; Cyberpunk theme tweaks
-(when (equal '(cyberpunk) custom-enabled-themes)
+(when (and (display-graphic-p)
+	   (equal '(cyberpunk) custom-enabled-themes))
   (progn
     (set-face-attribute 'mode-line nil :box nil)
     (set-face-attribute 'mode-line-inactive nil :box nil)
