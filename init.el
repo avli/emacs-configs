@@ -41,11 +41,20 @@
     paredit
 
     ;; Apropriate color theme
-    cyberpunk-theme
+    lush-theme
 
     ;; Autocompletion for Emacs. May be annoying sometimes so let's
     ;; use it only when it's necesary
-    company))
+    company
+
+    ;; Markdown support
+    markdown-mode
+
+    ;; Python IDE, e.g. autocompletion, jumping to definitions and so
+    ;; on. Please, note if you use brewed version of Python on Mac OS
+    ;; X you need to consult with the following guide:
+    ;; https://gist.github.com/mahmoudimus/3ccaf9811e50fcd2a410
+    anaconda-mode))
 
 ;; Install packages if not installed already
 (dolist (p list-of-packages)
