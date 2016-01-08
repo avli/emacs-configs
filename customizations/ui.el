@@ -1,5 +1,10 @@
 ;; Set apropriate color theme
-(load-theme 'lush 't)
+(when (display-graphic-p)
+  (load-theme 'lush 't))
+
+;; Disable syntax highlighting in console
+(unless (display-graphic-p)
+  (global-font-lock-mode -1))
 
 ;; Turn off menu bar in console
 (unless (display-graphic-p)
