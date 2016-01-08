@@ -16,11 +16,15 @@
 (column-number-mode 1)
 
 ;; comments
-(defun toggle-comment-on-line ()
-  "comment or uncomment current line"
+(defun toggle-comment-dwim ()
+  "comment or uncomment current region or line"
   (interactive)
-  (comment-or-uncomment-region (line-beginning-position) (line-end-position)))
-(global-set-key (kbd "C-;") 'toggle-comment-on-line)
+  (if (region-active-p)
+      (let ((begin (region-beginning))
+	    (end (region-end)))
+	(comment-or-uncomment-region begin end))
+    (comment-or-uncomment-region (line-beginning-position) (line-end-position))))
+(global-set-key (kbd "C-;") 'toggle-comment-dwim)
 
 ;; C-o and C-O bahaves like o and O commands in vi (add new line above
 ;; and below)
