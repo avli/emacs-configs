@@ -54,7 +54,11 @@
     ;; on. Please, note if you use brewed version of Python on Mac OS
     ;; X you need to consult with the following guide:
     ;; https://gist.github.com/mahmoudimus/3ccaf9811e50fcd2a410
-    anaconda-mode))
+    anaconda-mode
+
+    ;; Anaconda data sourse for company mode. This allows company to
+    ;; use anaconda as a source of completion
+    company-anaconda))
 
 ;; Install packages if not installed already
 (dolist (p list-of-packages)
