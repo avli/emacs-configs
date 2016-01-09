@@ -51,3 +51,7 @@
 ;; and C-x C--!
 (global-set-key (kbd "C-+") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
+
+;; Call magit status with C-x g when editing file under version
+;; control
+(global-set-key (kbd "C-x g") 'magit-status)
