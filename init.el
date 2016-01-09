@@ -58,7 +58,10 @@
 
     ;; Anaconda data sourse for company mode. This allows company to
     ;; use anaconda as a source of completion
-    company-anaconda))
+    company-anaconda
+
+    ;; Syntax highlighting for Docker files
+    dockerfile-mode))
 
 ;; Install packages if not installed already
 (dolist (p list-of-packages)
