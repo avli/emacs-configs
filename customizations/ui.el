@@ -47,8 +47,9 @@
    'company-tooltip-annotation-selection nil
    :background "#00736F"))
 
-;; Show line numbers everywhere
-(global-linum-mode 1)
+;; Show line numbers everywhere in GUI
+(when (display-graphic-p)
+  (global-linum-mode 1))
 
 ;; ... but not in terminal emulators
 (let ((hook (lambda () (linum-mode -1))))
