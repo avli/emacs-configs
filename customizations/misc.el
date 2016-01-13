@@ -20,4 +20,5 @@
 
 ;; It's not enough to redefine custom file path, we need to explicitly
 ;; load it
-(load custom-file)
+(when (file-exists-p custom-file)
+  (load custom-file))
