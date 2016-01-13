@@ -40,6 +40,13 @@
 (set-face-attribute 'ido-vertical-first-match-face nil
 		    :foreground "#002b36" :background "#b58900")
 
+;; Fix company mode tooltip annotation selecttion color. Without this
+;; fix Clojure tooltips look ugly
+(add-hook 'company-mode-hook
+	  (lambda () (set-face-attribute
+		      'company-tooltip-annotation-selection nil
+		      :background "#00736F")))
+
 ;; Show line numbers everywhere
 (global-linum-mode 1)
 
