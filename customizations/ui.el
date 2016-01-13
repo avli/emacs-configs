@@ -33,8 +33,20 @@
 ;; Change smart line mode theme to a dark one
 (sml/apply-theme 'smart-mode-line-dark)
 
+;; Enable vertical mode for ido
+(ido-vertical-mode 1)
+
+;; Tweak ido colors
+(set-face-attribute 'ido-vertical-first-match-face nil
+		    :foreground "#002b36" :background "#b58900")
+
 ;; Show line numbers everywhere
 (global-linum-mode 1)
+
+;; ... but not in terminal emulators
+(let ((hook (lambda () (linum-mode -1))))
+  (dolist (mode '(shell-mode-hook))
+    (add-hook mode hook)))
 
 ;; Make line numbers font smaller and set more appropriate font
 (set-face-attribute 'linum nil :foreground "steel blue" :height 0.7)

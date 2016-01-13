@@ -64,7 +64,10 @@
     dockerfile-mode
 
     ;; Smart mode line makes Emacs mode line a bit more attractive
-    smart-mode-line))
+    smart-mode-line
+
+    ;; Cool vertical mode for ido
+    ido-vertical-mode))
 
 ;; Install packages if not installed already
 (dolist (p list-of-packages)
