@@ -1,6 +1,6 @@
 ;; Set apropriate color theme
 (when (display-graphic-p)
-  (load-theme 'lush 't))
+  (load-theme 'solarized-dark 't))
 
 ;; Disable syntax highlighting in console
 (unless (display-graphic-p)
@@ -20,9 +20,27 @@
 ;; Set fonts for different OS
 (cond
  ((string-equal system-type "darwin")
-  (setq default-frame-alist '((font . "DejaVu Sans Mono-12"))))
+  (setq default-frame-alist '((font . "Inconsolata-dz for Powerline-14"))))
  ((string-equal system-type "gnu/linux")
   ((setq default-frame-alist '((font . "DejaVu Sans Mono-12"))))))
+
+;; Don't ask user to allow smart mode line theme loading
+(setq sml/no-confirm-load-theme 't)
+
+;; Enable smart line mode
+(sml/setup)
+
+;; Change smart line mode theme to a dark one
+(sml/apply-theme 'smart-mode-line-dark)
+
+;; Show line numbers everywhere
+(global-linum-mode 1)
+
+;; Make line numbers font smaller and set more appropriate font
+(set-face-attribute 'linum nil :foreground "steel blue" :height 0.7)
+
+;; Slightly change linum format
+(setq linum-format (if (not window-system) "%4d " "%4d"))
 
 ;; Full path in title bar
 (setq-default frame-title-format "%b (%f)")

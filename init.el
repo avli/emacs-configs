@@ -41,7 +41,7 @@
     paredit
 
     ;; Apropriate color theme
-    lush-theme
+    solarized-theme
 
     ;; Autocompletion for Emacs. May be annoying sometimes so let's
     ;; use it only when it's necesary
@@ -61,7 +61,10 @@
     company-anaconda
 
     ;; Syntax highlighting for Docker files
-    dockerfile-mode))
+    dockerfile-mode
+
+    ;; Smart mode line makes Emacs mode line a bit more attractive
+    smart-mode-line))
 
 ;; Install packages if not installed already
 (dolist (p list-of-packages)
