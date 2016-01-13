@@ -45,7 +45,10 @@
 
 ;; ... but not in terminal emulators
 (let ((hook (lambda () (linum-mode -1))))
-  (dolist (mode '(shell-mode-hook))
+  (dolist (mode '(shell-mode-hook
+		  term-mode-hook
+		  ansi-term-mode-hook
+		  eshell-mode-hook))
     (add-hook mode hook)))
 
 ;; Make line numbers font smaller and set more appropriate font
