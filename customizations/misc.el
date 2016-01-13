@@ -13,3 +13,11 @@
 ;; necessary to add extra paths manually
 (when (display-graphic-p)
   (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH"))))
+
+;; Store customizations made with customize-* in ~/.emacs-custom.el
+;; instead of ~/.emacs.d/init.el
+(setq custom-file "~/.emacs-custom.el")
+
+;; It's not enough to redefine custom file path, we need to explicitly
+;; load it
+(load custom-file)
