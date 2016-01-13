@@ -55,7 +55,8 @@
   (dolist (mode '(shell-mode-hook
 		  term-mode-hook
 		  ansi-term-mode-hook
-		  eshell-mode-hook))
+		  eshell-mode-hook
+		  haskell-interactive-mode-hook))
     (add-hook mode hook)))
 
 ;; Make line numbers font smaller and set more appropriate font
