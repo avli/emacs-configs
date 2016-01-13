@@ -67,7 +67,10 @@
     smart-mode-line
 
     ;; Cool vertical mode for ido
-    ido-vertical-mode))
+    ido-vertical-mode
+
+    ;; Haskel support
+    haskell-mode))
 
 ;; Install packages if not installed already
 (dolist (p list-of-packages)
