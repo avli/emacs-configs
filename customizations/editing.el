@@ -56,6 +56,13 @@
 ;; control
 (global-set-key (kbd "C-x g") 'magit-status)
 
+;; Rebind company keys. Select from suggestions using M-n and M-p is very inconvinient! C-n and C-p are much better
+(with-eval-after-load 'company
+  (define-key company-active-map (kbd "M-n") nil)
+  (define-key company-active-map (kbd "M-p") nil)
+  (define-key company-active-map (kbd "C-n") #'company-select-next)
+  (define-key company-active-map (kbd "C-p") #'company-select-previous))
+
 ;; This scary function was borrowed from
 ;; http://ru-emacs.livejournal.com/82428.html and makes Emacs to
 ;; understand commands when system keyboard layout is set on something
