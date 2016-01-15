@@ -61,10 +61,12 @@
     (add-hook mode hook)))
 
 ;; Make line numbers font smaller and set more appropriate font
-(set-face-attribute 'linum nil :foreground "steel blue" :height 0.7)
+(with-eval-after-load 'linum
+  (set-face-attribute 'linum nil :foreground "steel blue" :height 0.7))
 
 ;; Slightly change linum format
-(setq linum-format (if (not window-system) "%4d " "%4d"))
+(with-eval-after-load 'linum
+  (setq linum-format (if (not window-system) "%4d " "%4d")))
 
 ;; Full path in title bar
 (setq-default frame-title-format "%b (%f)")
