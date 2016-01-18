@@ -56,12 +56,17 @@
 ;; control
 (global-set-key (kbd "C-x g") 'magit-status)
 
-;; Rebind company keys. Select from suggestions using M-n and M-p is very inconvinient! C-n and C-p are much better
+;; Company mode configuration
 (with-eval-after-load 'company
+  ;; Rebind company keys. Select from suggestions using M-n and M-p is very inconvinient! C-n and C-p are much better
   (define-key company-active-map (kbd "M-n") nil)
   (define-key company-active-map (kbd "M-p") nil)
   (define-key company-active-map (kbd "C-n") #'company-select-next)
-  (define-key company-active-map (kbd "C-p") #'company-select-previous))
+  (define-key company-active-map (kbd "C-p") #'company-select-previous)
+  ;; No delay before completion start
+  (setq company-idle-delay 0)
+  ;; Start completion after the first symbol has been pressed
+  (setq company-minimum-prefix-length 1))
 
 ;; This scary function was borrowed from
 ;; http://ru-emacs.livejournal.com/82428.html and makes Emacs to
