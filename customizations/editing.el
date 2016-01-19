@@ -66,7 +66,12 @@
   ;; No delay before completion start
   (setq company-idle-delay 0)
   ;; Start completion after the first symbol has been pressed
-  (setq company-minimum-prefix-length 1))
+  (setq company-minimum-prefix-length 1)
+  ;; Ignore case when searching completions
+  (setq company-dabbrev-code-ignore-case 1)
+  ;; By default dabbrev ignores everything shorter than 4 symbol, but
+  ;; we want to autocomplete everything, aren't we?
+  (setq company-dabbrev-minimum-length 1))
 
 ;; This scary function was borrowed from
 ;; http://ru-emacs.livejournal.com/82428.html and makes Emacs to
