@@ -1,6 +1,6 @@
 ;; Set apropriate color theme
 (when (display-graphic-p)
-  (load-theme 'solarized-dark 't))
+  (load-theme 'atom-one-dark 't))
 
 ;; Disable syntax highlighting in console
 (unless (display-graphic-p)
@@ -16,6 +16,9 @@
 
 ;; Disable tool bar
 (tool-bar-mode -1)
+
+;; Set cursor type to bar like in the Atom editor
+(setq-default cursor-type 'bar)
 
 ;; Set fonts for different OS
 (cond
@@ -36,16 +39,19 @@
 ;; Enable vertical mode for ido
 (ido-vertical-mode 1)
 
-;; Tweak ido colors
-(set-face-attribute 'ido-vertical-first-match-face nil
-		    :foreground "#002b36" :background "#b58900")
+;; Adjust company mode colors to be less destructive
+(with-eval-after-load 'company
+  (set-face-attribute 'company-tooltip nil :background "#21252F")
+  (set-face-attribute 'company-tooltip-common nil :background "#21252F" :foreground "#F5F5F5")
+  (set-face-attribute 'company-tooltip-common-selection nil :background "#3E4451" :foreground  "white")
+  (set-face-attribute 'company-tooltip-annotation nil :background "#21252F"))
 
 ;; Fix company mode tooltip annotation selecttion color. Without this
 ;; fix Clojure tooltips look ugly
 (with-eval-after-load 'company
   (set-face-attribute
    'company-tooltip-annotation-selection nil
-   :background "#00736F"))
+   :background "#3E4451"))
 
 ;; Show line numbers everywhere in GUI
 (when (display-graphic-p)
