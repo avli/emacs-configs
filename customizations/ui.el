@@ -43,8 +43,9 @@
 (with-eval-after-load 'company
   (set-face-attribute 'company-tooltip nil :background "#21252F")
   (set-face-attribute 'company-tooltip-common nil :background "#21252F" :foreground "#F5F5F5")
-  (set-face-attribute 'company-tooltip-common-selection nil :background "#3E4451" :foreground  "white")
-  (set-face-attribute 'company-tooltip-annotation nil :background "#21252F"))
+  (set-face-attribute 'company-tooltip-common-selection nil :background "#3E4451" :foreground  "#F5F5F5")
+  (set-face-attribute 'company-tooltip-annotation nil :background "#21252F")
+  (set-face-attribute 'company-preview-common nil :foreground "#F5F5F5"))
 
 ;; Fix company mode tooltip annotation selecttion color. Without this
 ;; fix Clojure tooltips look ugly
