@@ -21,7 +21,7 @@
     ;; cider it is necessary to add necessary dependencies to your
     ;; ~/.lein/profiles.clj file. I believe, it should looks like
     ;;
-    ;; {:repl {:dependencies [[org.clojure/clojure "1.7.0"]
+    ;; {:repl {:dependencies [[org.clojure/clojure "1.8.0"]
     ;;                        [org.clojure/tools.nrepl "0.2.12"]]
     ;;         :plugins [[cider/cider-nrepl "0.11.0-snapshot"]]}}
     ;;
