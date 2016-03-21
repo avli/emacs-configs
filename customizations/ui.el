@@ -23,7 +23,7 @@
 ;; Set fonts for different OS
 (cond
  ((string-equal system-type "darwin")
-  (setq default-frame-alist '((font . "M+ 1mn-13"))))
+  (setq default-frame-alist '((font . "Inconsolata LGC-12"))))
  ((string-equal system-type "gnu/linux")
   ((setq default-frame-alist '((font . "DejaVu Sans Mono-12"))))))
 
