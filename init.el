@@ -41,7 +41,7 @@
     paredit
 
     ;; Apropriate color theme
-    atom-one-dark-theme
+    color-theme-sanityinc-tomorrow
 
     ;; Autocompletion for Emacs. May be annoying sometimes so let's
     ;; use it only when it's necesary

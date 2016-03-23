@@ -1,6 +1,6 @@
 ;; Set apropriate color theme
 (when (display-graphic-p)
-  (load-theme 'atom-one-dark 't))
+  (load-theme 'sanityinc-tomorrow-bright 't))
 
 ;; Disable syntax highlighting in console
 (unless (display-graphic-p)
@@ -23,7 +23,7 @@
 ;; Set fonts for different OS
 (cond
  ((string-equal system-type "darwin")
-  (setq default-frame-alist '((font . "Inconsolata LGC-12"))))
+  (setq default-frame-alist '((font . "Monaco-12"))))
  ((string-equal system-type "gnu/linux")
   ((setq default-frame-alist '((font . "DejaVu Sans Mono-12"))))))
 
@@ -39,20 +39,12 @@
 ;; Enable vertical mode for ido
 (ido-vertical-mode 1)
 
-;; Adjust company mode colors to be less destructive
-(with-eval-after-load 'company
-  (set-face-attribute 'company-tooltip nil :background "#21252F")
-  (set-face-attribute 'company-tooltip-common nil :background "#21252F" :foreground "#F5F5F5")
-  (set-face-attribute 'company-tooltip-common-selection nil :background "#3E4451" :foreground  "#F5F5F5")
-  (set-face-attribute 'company-tooltip-annotation nil :background "#21252F")
-  (set-face-attribute 'company-preview-common nil :foreground "#F5F5F5"))
-
 ;; Fix company mode tooltip annotation selecttion color. Without this
 ;; fix Clojure tooltips look ugly
 (with-eval-after-load 'company
   (set-face-attribute
    'company-tooltip-annotation-selection nil
-   :background "#3E4451"))
+   :background "#2a2a2a"))
 
 ;; Show line numbers everywhere in GUI
 (when (display-graphic-p)
@@ -66,10 +58,6 @@
 		  eshell-mode-hook
 		  haskell-interactive-mode-hook))
     (add-hook mode hook)))
-
-;; Make line numbers font smaller and set more appropriate font
-(with-eval-after-load 'linum
-  (set-face-attribute 'linum nil :foreground "steel blue" :height 0.7))
 
 ;; Slightly change linum format
 (with-eval-after-load 'linum
