@@ -72,6 +72,8 @@
 ;; Disable bell
 (setq ring-bell-function 'ignore)
 
+;; Indicate empty lines
+(setq-default indicate-empty-lines 1)
 
 ;; Fix colors in Emacs shell to play nicely with zsh. Don't forget to
 ;; setenv TERM xterm-256color
