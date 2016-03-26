@@ -23,7 +23,8 @@
 ;; Set fonts for different OS
 (cond
  ((string-equal system-type "darwin")
-  (setq default-frame-alist '((font . "Monaco-12"))))
+  (setq default-frame-alist '((font . "Monaco-12")))
+  (set-face-attribute 'default nil :height 105))
  ((string-equal system-type "gnu/linux")
   ((setq default-frame-alist '((font . "DejaVu Sans Mono-12"))))))
 
@@ -45,23 +46,6 @@
   (set-face-attribute
    'company-tooltip-annotation-selection nil
    :background "#2a2a2a"))
-
-;; Show line numbers everywhere in GUI
-(when (display-graphic-p)
-  (global-linum-mode 1))
-
-;; ... but not in terminal emulators
-(let ((hook (lambda () (linum-mode -1))))
-  (dolist (mode '(shell-mode-hook
-		  term-mode-hook
-		  ansi-term-mode-hook
-		  eshell-mode-hook
-		  haskell-interactive-mode-hook))
-    (add-hook mode hook)))
-
-;; Slightly change linum format
-(with-eval-after-load 'linum
-  (setq linum-format (if (not window-system) "%4d " "%4d")))
 
 ;; Full path in title bar
 (setq-default frame-title-format "%b (%f)")
