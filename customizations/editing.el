@@ -73,6 +73,10 @@
   ;; we want to autocomplete everything, aren't we?
   (setq company-dabbrev-minimum-length 1))
 
+;; Don't truncate long lines, I think it's all modern editors default
+;; behavior
+(setq-default truncate-lines 0)
+
 ;; This scary function was borrowed from
 ;; http://ru-emacs.livejournal.com/82428.html and makes Emacs to
 ;; understand commands when system keyboard layout is set on something
