@@ -41,7 +41,7 @@
     paredit
 
     ;; Apropriate color theme
-    color-theme-sanityinc-tomorrow
+    base16-theme
 
     ;; Autocompletion for Emacs. May be annoying sometimes so let's
     ;; use it only when it's necesary
@@ -69,8 +69,12 @@
     ;; Cool vertical mode for ido
     ido-vertical-mode
 
-    ;; Haskel support
-    haskell-mode))
+    ;; Haskell support
+    haskell-mode
+
+    ;; XTerm colors support. Important for integration with zsh
+    xterm-color
+    ))
 
 ;; Install packages if not installed already
 (dolist (p list-of-packages)
