@@ -34,7 +34,7 @@
 (sml/setup)
 
 ;; Change smart line mode theme to a dark one
-(sml/apply-theme 'smart-mode-line-dark)
+(sml/apply-theme 'smart-mode-line-respectful)
 
 ;; Enable vertical mode for ido
 (ido-vertical-mode 1)
