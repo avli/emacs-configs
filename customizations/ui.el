@@ -1,6 +1,6 @@
 ;; Set apropriate color theme
 (when (display-graphic-p)
-  (load-theme 'sanityinc-tomorrow-bright 't))
+  (load-theme 'solarized-light 't))
 
 ;; Disable syntax highlighting in console
 (unless (display-graphic-p)
@@ -44,7 +44,7 @@
 (with-eval-after-load 'company
   (set-face-attribute
    'company-tooltip-annotation-selection nil
-   :background "#2a2a2a"))
+   :background "#69CABF"))
 
 ;; Full path in title bar
 (setq-default frame-title-format "%b (%f)")

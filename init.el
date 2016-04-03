@@ -41,7 +41,7 @@
     paredit
 
     ;; Apropriate color theme
-    base16-theme
+    solarized-theme
 
     ;; Autocompletion for Emacs. May be annoying sometimes so let's
     ;; use it only when it's necesary
