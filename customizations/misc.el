@@ -22,7 +22,3 @@
 ;; load it
 (when (file-exists-p custom-file)
   (load custom-file))
-
-;; Spell text while typing in all text modes, e.g. text-mode,
-;; markdown-mode and others
-(add-hook 'text-mode-hook 'flyspell-mode)
