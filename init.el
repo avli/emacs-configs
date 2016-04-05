@@ -74,6 +74,10 @@
 
     ;; XTerm colors support. Important for integration with zsh
     xterm-color
+
+    ;; Useful plugin for navigation through the code similar to Vim's
+    ;; tagbar
+    imenu-list
     ))
 
 ;; Install packages if not installed already
