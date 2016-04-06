@@ -78,6 +78,9 @@
     ;; Useful plugin for navigation through the code similar to Vim's
     ;; tagbar
     imenu-list
+
+    ;; Fuzzy navigation through Emacs commands
+    smex
     ))
 
 ;; Install packages if not installed already
