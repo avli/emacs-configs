@@ -26,7 +26,7 @@
     (comment-or-uncomment-region (line-beginning-position) (line-end-position))))
 (global-set-key (kbd "C-;") 'toggle-comment-dwim)
 
-;; C-o and C-O bahaves like o and O commands in vi (add new line above
+;; C-o and C-O behaves like o and O commands in vi (add new line above
 ;; and below)
 (defun vi-open-line-above ()
   "Insert a newline above the current line and put point at beginning."
