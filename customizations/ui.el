@@ -1,6 +1,6 @@
 ;; Set apropriate color theme
 (when (display-graphic-p)
-  (load-theme 'solarized-light 't))
+  (load-theme 'default-dark 't))
 
 ;; Disable syntax highlighting in console
 (unless (display-graphic-p)
@@ -23,28 +23,12 @@
 ;; Set fonts for different OS
 (cond
  ((string-equal system-type "darwin")
-  (setq default-frame-alist '((font . "Monaco-11"))))
+  (setq default-frame-alist '((font . "Monaco-12"))))
  ((string-equal system-type "gnu/linux")
   ((setq default-frame-alist '((font . "DejaVu Sans Mono-12"))))))
 
-;; Don't ask user to allow smart mode line theme loading
-(setq sml/no-confirm-load-theme 't)
-
-;; Enable smart line mode
-(sml/setup)
-
-;; Change smart line mode theme to a dark one
-(sml/apply-theme 'smart-mode-line-respectful)
-
 ;; Enable vertical mode for ido
 (ido-vertical-mode 1)
-
-;; Fix company mode tooltip annotation selecttion color. Without this
-;; fix Clojure tooltips look ugly
-(with-eval-after-load 'company
-  (set-face-attribute
-   'company-tooltip-annotation-selection nil
-   :background "#69CABF"))
 
 ;; Full path in title bar
 (setq-default frame-title-format "%b (%f)")
@@ -64,3 +48,13 @@
 (progn (add-hook 'comint-preoutput-filter-functions 'xterm-color-filter)
        (setq comint-output-filter-functions (remove 'ansi-color-process-output comint-output-filter-functions))
        (setq font-lock-unfontify-region-function 'xterm-color-unfontify-region))
+
+;; Function for toggling dark and light theme
+(defun toggle-dark-light-theme ()
+  (interactive)
+  (if (find 'default-dark custom-enabled-themes)
+      (disable-theme 'default-dark)
+    (load-theme 'default-dark t)))
+
+;; C-x l for toggle themes
+(global-set-key (kbd "C-x l") 'toggle-dark-light-theme)

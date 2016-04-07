@@ -40,9 +40,6 @@
     ;; Making handling lisp expressions easier
     paredit
 
-    ;; Apropriate color theme
-    solarized-theme
-
     ;; Autocompletion for Emacs. May be annoying sometimes so let's
     ;; use it only when it's necesary
     company
@@ -62,9 +59,6 @@
 
     ;; Syntax highlighting for Docker files
     dockerfile-mode
-
-    ;; Smart mode line makes Emacs mode line a bit more attractive
-    smart-mode-line
 
     ;; Cool vertical mode for ido
     ido-vertical-mode
