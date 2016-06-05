@@ -15,11 +15,11 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-;; The packages we want to install
+;; Packages we want to install
 (defvar list-of-packages
-  '(;; Integration with Clojure REPL. Note, that if you want to use
-    ;; cider it is necessary to add necessary dependencies to your
-    ;; ~/.lein/profiles.clj file. I believe, it should looks like
+  '(;; Integration with the Clojure REPL. Note, that if you want to use
+    ;; cider it is improtant to add necessary dependencies to your
+    ;; ~/.lein/profiles.clj file, e.g.
     ;;
     ;; {:repl {:dependencies [[org.clojure/clojure "1.8.0"]
     ;;                        [org.clojure/tools.nrepl "0.2.12"]]
@@ -43,9 +43,9 @@
     ;; Markdown support
     markdown-mode
 
-    ;; Python IDE, e.g. autocompletion, jumping to definitions and so
-    ;; on. Please, note if you use brewed version of Python on Mac OS
-    ;; X you need to consult with the following guide:
+    ;; A Python IDE, e.g. autocompletion, jumping to definitions and
+    ;; so on. Please, note if you use brewed version of Python on Mac
+    ;; OS X you need to consult with the following guide:
     ;; https://gist.github.com/mahmoudimus/3ccaf9811e50fcd2a410
     anaconda-mode
 
@@ -58,11 +58,11 @@
     ;; Haskell support
     haskell-mode
 
-    ;; XTerm colors support. Important for integration with zsh
+    ;; XTerm colors support. Important for the integration with zsh
     xterm-color
 
-    ;; Useful plugin for navigation through the code similar to Vim's
-    ;; tagbar
+    ;; A useful plugin for navigation through the code similar to
+    ;; Vim's tagbar
     imenu-list
 
     ;; Fuzzy navigation through Emacs commands
@@ -78,11 +78,11 @@
 ;; Customization
 ;;;;
 
-;; Add customizations directory to load path. This makes possible to
-;; load particular emacs lisp files from it
+;; Add customizations directory to the load path. This makes possible
+;; to load particular emacs lisp files from it
 (add-to-list 'load-path "~/.emacs.d/customizations")
 
-;; Load Emacs UI customizations. Here we set up color theme,
+;; Load Emacs UI customizations. Here we set up a color theme,
 ;; enable/disable different interface elemenets and so on
 (load "ui.el")
 
