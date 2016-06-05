@@ -40,10 +40,6 @@
     ;; Making handling lisp expressions easier
     paredit
 
-    ;; Autocompletion for Emacs. May be annoying sometimes so let's
-    ;; use it only when it's necesary
-    company
-
     ;; Markdown support
     markdown-mode
 
@@ -52,10 +48,6 @@
     ;; X you need to consult with the following guide:
     ;; https://gist.github.com/mahmoudimus/3ccaf9811e50fcd2a410
     anaconda-mode
-
-    ;; Anaconda data sourse for company mode. This allows company to
-    ;; use anaconda as a source of completion
-    company-anaconda
 
     ;; Syntax highlighting for Docker files
     dockerfile-mode

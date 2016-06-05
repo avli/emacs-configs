@@ -5,10 +5,11 @@
  'default-dark
  '(show-paren-match ((t (:background "#333399"))))
  '(region ((t (:background "#464740"))))
- '(company-tooltip ((t (:background "#cccccc" :foreground "black"))))
- '(company-scrollbar-bg ((t (:background "#999999"))))
- '(company-scrollbar-fg ((t (:background "#555555"))))
- '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "nil" :family "Monaco"))))
- '(mode-line ((t (:background "darkblue" :foreground "grey85" :box (:line-width -1 :style released-button))))))
+ '(default ((t (:inherit nil :stipple nil :background "#0C1021" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "nil" :family "Monaco"))))
+ '(mode-line ((t (:background "darkblue" :foreground "grey85" :box (:line-width -1 :style released-button)))))
+ '(font-lock-string-face ((t (:foreground "#5BC039"))))
+ '(font-lock-comment-face ((t (:foreground "#ACACAC"))))
+ '(font-lock-function-name-face ((t (:foreground "#EE5E08"))))
+ '(font-lock-keyword-face ((t (:foreground "#F3D82C")))))
 
 (provide-theme 'default-dark)

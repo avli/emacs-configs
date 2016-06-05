@@ -2,12 +2,6 @@
 ;; Haskell
 ;;;;
 
-;; Enable company mode when editing Haskell code
-(add-hook 'haskell-mode-hook 'company-mode)
-
-;; Enable company mode in Haskell REPL
-(add-hook 'haskell-interactive-mode-hook 'company-mode)
-
 ;; Enable eldoc for getting functions signatures in Haskell mode and
 ;; Haskell REPL
 (dolist (mode '(haskell-mode-hook haskell-interactive-mode-hook))
@@ -17,3 +11,7 @@
 (add-hook 'haskell-mode-hook (lambda ()
 			       (local-set-key (kbd "C-c C-p") 'haskell-interactive-bring)
 			       (local-set-key (kbd "C-c C-l") 'haskell-process-load-file)))
+
+(add-hook 'haskell-mode-hook (lambda ()
+			       (add-to-list 'exec-path "/Users/andrey/Library/Haskell/bin")
+			       (ghc-init)))

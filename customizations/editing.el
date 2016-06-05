@@ -56,23 +56,6 @@
 ;; control
 (global-set-key (kbd "C-x g") 'magit-status)
 
-;; Company mode configuration
-(with-eval-after-load 'company
-  ;; Rebind company keys. Select from suggestions using M-n and M-p is very inconvinient! C-n and C-p are much better
-  (define-key company-active-map (kbd "M-n") nil)
-  (define-key company-active-map (kbd "M-p") nil)
-  (define-key company-active-map (kbd "C-n") #'company-select-next)
-  (define-key company-active-map (kbd "C-p") #'company-select-previous)
-  ;; No delay before completion start
-  (setq company-idle-delay 0)
-  ;; Start completion after the first symbol has been pressed
-  (setq company-minimum-prefix-length 1)
-  ;; Ignore case when searching completions
-  (setq company-dabbrev-code-ignore-case 1)
-  ;; By default dabbrev ignores everything shorter than 4 symbol, but
-  ;; we want to autocomplete everything, aren't we?
-  (setq company-dabbrev-minimum-length 1))
-
 ;; Don't truncate long lines, I think it's all modern editors default
 ;; behavior
 (setq-default truncate-lines 0)
