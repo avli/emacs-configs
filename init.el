@@ -40,6 +40,14 @@
     ;; Making handling lisp expressions easier
     paredit
 
+    ;; Autocompletion for Emacs. May be annoying sometimes so let's
+    ;; use it only when it's necesary
+    company
+
+    ;; Anaconda data sourse for company mode. This allows company to
+    ;; use anaconda as a source of completion
+    company-anaconda
+
     ;; Markdown support
     markdown-mode
 
