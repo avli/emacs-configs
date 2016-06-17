@@ -49,6 +49,15 @@
        (setq comint-output-filter-functions (remove 'ansi-color-process-output comint-output-filter-functions))
        (setq font-lock-unfontify-region-function 'xterm-color-unfontify-region))
 
+;; Match company tooltip colors with wombat theme
+(with-eval-after-load 'company
+  (progn
+    (set-face-attribute 'company-scrollbar-bg nil :background "#424242")
+    (set-face-attribute 'company-scrollbar-fg nil :background "#303030")
+    (set-face-attribute 'company-tooltip nil :background "#343434" :foreground "#857b6f")
+    (set-face-attribute 'company-tooltip-selection nil :background "#384048" :foreground "#a0a8b0")
+    (set-face-attribute 'company-tooltip-annotation nil :foreground "lime green")))
+
 ;; Function for toggling dark and light theme
 (defun toggle-dark-light-theme ()
   (interactive)

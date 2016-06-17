@@ -75,6 +75,9 @@
 
     ;; Fuzzy navigation through Emacs commands
     smex
+
+    ;; An apropriate color theme
+    color-theme-sanityinc-tomorrow
     ))
 
 ;; Install packages if not installed already
