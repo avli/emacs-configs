@@ -56,7 +56,8 @@
     (set-face-attribute 'company-scrollbar-fg nil :background "#303030")
     (set-face-attribute 'company-tooltip nil :background "#343434" :foreground "#857b6f")
     (set-face-attribute 'company-tooltip-selection nil :background "#384048" :foreground "#a0a8b0")
-    (set-face-attribute 'company-tooltip-annotation nil :foreground "lime green")))
+    (set-face-attribute 'company-tooltip-annotation nil :foreground "lime green")
+    (set-face-attribute 'company-tooltip-common-selection nil :foreground "#8ac6f2")))
 
 ;; Function for toggling dark and light theme
 (defun toggle-dark-light-theme ()
