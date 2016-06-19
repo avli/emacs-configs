@@ -1,6 +1,6 @@
-;; Set apropriate color theme
+
 (when (display-graphic-p)
-  (load-theme 'wombat 't))
+  (load-theme 'monokai 't))
 
 ;; Disable syntax highlighting in console
 (unless (display-graphic-p)
@@ -23,7 +23,7 @@
 ;; Set fonts for different OS
 (cond
  ((string-equal system-type "darwin")
-  (setq default-frame-alist '((font . "Monaco-12"))))
+  (setq default-frame-alist '((font . "Consolas-13"))))
  ((string-equal system-type "gnu/linux")
   ((setq default-frame-alist '((font . "DejaVu Sans Mono-12"))))))
 
@@ -52,12 +52,14 @@
 ;; Match company tooltip colors with wombat theme
 (with-eval-after-load 'company
   (progn
-    (set-face-attribute 'company-scrollbar-bg nil :background "#424242")
-    (set-face-attribute 'company-scrollbar-fg nil :background "#303030")
-    (set-face-attribute 'company-tooltip nil :background "#343434" :foreground "#857b6f")
-    (set-face-attribute 'company-tooltip-selection nil :background "#384048" :foreground "#a0a8b0")
-    (set-face-attribute 'company-tooltip-annotation nil :foreground "lime green")
-    (set-face-attribute 'company-tooltip-common-selection nil :foreground "#8ac6f2")))
+    ;; (set-face-attribute 'company-scrollbar-bg nil :background "#424242")
+    ;; (set-face-attribute 'company-scrollbar-fg nil :background "#303030")
+    ;; (set-face-attribute 'company-tooltip nil :background "#343434" :foreground "#857b6f")
+    ;; (set-face-attribute 'company-tooltip-selection nil :background "#384048" :foreground "#a0a8b0")
+    ;; (set-face-attribute 'company-tooltip-annotation nil :foreground "lime green")
+    ;; (set-face-attribute 'company-tooltip-common nil :foreground "#8ac6f2")
+    (set-face-attribute 'region nil :background "#7b7962" :inherit nil)
+    (set-face-attribute 'company-tooltip-annotation-selection nil :inherit 'company-tooltip-selection)))
 
 ;; Function for toggling dark and light theme
 (defun toggle-dark-light-theme ()

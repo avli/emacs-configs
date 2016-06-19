@@ -77,7 +77,7 @@
     smex
 
     ;; An apropriate color theme
-    color-theme-sanityinc-tomorrow
+    monokai-theme
     ))
 
 ;; Install packages if not installed already
