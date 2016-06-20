@@ -77,7 +77,7 @@
     smex
 
     ;; An apropriate color theme
-    monokai-theme
+    base16-theme
     ))
 
 ;; Install packages if not installed already

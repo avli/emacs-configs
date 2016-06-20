@@ -1,6 +1,6 @@
 
 (when (display-graphic-p)
-  (load-theme 'monokai 't))
+  (load-theme 'base16-default-dark 't))
 
 ;; Disable syntax highlighting in console
 (unless (display-graphic-p)
@@ -58,8 +58,7 @@
     ;; (set-face-attribute 'company-tooltip-selection nil :background "#384048" :foreground "#a0a8b0")
     ;; (set-face-attribute 'company-tooltip-annotation nil :foreground "lime green")
     ;; (set-face-attribute 'company-tooltip-common nil :foreground "#8ac6f2")
-    (set-face-attribute 'region nil :background "#7b7962" :inherit nil)
-    (set-face-attribute 'company-tooltip-annotation-selection nil :inherit 'company-tooltip-selection)))
+))
 
 ;; Function for toggling dark and light theme
 (defun toggle-dark-light-theme ()
