@@ -77,7 +77,7 @@
     smex
 
     ;; An apropriate color theme
-    base16-theme
+    solarized-theme
     ))
 
 ;; Install packages if not installed already
