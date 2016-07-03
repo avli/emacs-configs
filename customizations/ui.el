@@ -30,7 +30,9 @@
 (global-linum-mode 1)
 
 ;; Set size and color of line numbers
-(set-face-attribute 'linum nil :height 0.7 :foreground "SteelBlue")
+(defun setup-linum-ui ()
+  (set-face-attribute 'linum nil :height 0.7 :foreground "SteelBlue"))
+(setup-linum-ui)
 
 ;; Enable vertical mode for ido
 (ido-vertical-mode 1)
@@ -69,13 +71,15 @@
 ;; Function for toggling dark and light theme
 (defun toggle-dark-light-theme ()
   (interactive)
-  (if (find 'solarized-dark custom-enabled-themes)
+  (if (member 'solarized-dark custom-enabled-themes)
       (progn
 	(disable-theme 'solarized-dark)
-	(load-theme 'solarized-light t))
+	(load-theme 'solarized-light t)
+	(setup-linum-ui))
     (progn
       (disable-theme 'solarized-light)
-      (load-theme 'solarized-dark t))))
+      (load-theme 'solarized-dark t)
+      (setup-linum-ui))))
 
 ;; C-x l for toggle themes
 (global-set-key (kbd "C-x l") 'toggle-dark-light-theme)
