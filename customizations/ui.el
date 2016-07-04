@@ -34,6 +34,15 @@
   (set-face-attribute 'linum nil :height 0.7 :foreground "SteelBlue"))
 (setup-linum-ui)
 
+;; Mark smart mode line theme as safe
+(setq sml/no-confirm-load-theme t)
+
+;; Setup smart mode line
+(defun setup-sml ()
+  (setq sml/theme 'dark)
+  (sml/setup))
+(setup-sml)
+
 ;; Enable vertical mode for ido
 (ido-vertical-mode 1)
 
@@ -75,11 +84,13 @@
       (progn
 	(disable-theme 'solarized-dark)
 	(load-theme 'solarized-light t)
-	(setup-linum-ui))
+	(setup-linum-ui)
+	(setup-sml))
     (progn
       (disable-theme 'solarized-light)
       (load-theme 'solarized-dark t)
-      (setup-linum-ui))))
+      (setup-linum-ui)
+      (setup-sml))))
 
 ;; C-x l for toggle themes
 (global-set-key (kbd "C-x l") 'toggle-dark-light-theme)

@@ -78,6 +78,9 @@
 
     ;; An apropriate color theme
     solarized-theme
+
+    ;; Smart mode line
+    smart-mode-line
     ))
 
 ;; Install packages if not installed already
