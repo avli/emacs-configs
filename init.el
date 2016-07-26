@@ -81,6 +81,9 @@
 
     ;; Smart mode line
     smart-mode-line
+
+    ;; TypeScript facilities
+    tide
     ))
 
 ;; Install packages if not installed already
@@ -116,3 +119,4 @@
 (load "setup-haskell.el")
 (load "setup-python.el")
 (load "setup-text.el")
+(load "setup-typescript.el")
