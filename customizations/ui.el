@@ -1,5 +1,6 @@
-(when (display-graphic-p)
-  (load-theme 'solarized-dark 't))
+(if (display-graphic-p)
+    (load-theme 'solarized-dark 't)
+  (load-theme 'default-dark 't))
 
 ;; Turn off menu bar in console
 (unless (display-graphic-p)
