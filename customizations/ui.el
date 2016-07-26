@@ -1,10 +1,6 @@
 (when (display-graphic-p)
   (load-theme 'solarized-dark 't))
 
-;; Disable syntax highlighting in console
-(unless (display-graphic-p)
-  (global-font-lock-mode -1))
-
 ;; Turn off menu bar in console
 (unless (display-graphic-p)
   (menu-bar-mode -1))
@@ -26,13 +22,14 @@
  ((string-equal system-type "gnu/linux")
   ((setq default-frame-alist '((font . "DejaVu Sans Mono-12"))))))
 
-;; Show line numbers
-(global-linum-mode 1)
+;; Show line numbers when run in the graphical mode
+(when (display-graphic-p)
+  (global-linum-mode 1))
 
 ;; Set size and color of line numbers
 (defun setup-linum-ui ()
   (set-face-attribute 'linum nil :height 0.7 :foreground "SteelBlue"))
-(setup-linum-ui)
+(when (display-graphic-p) (setup-linum-ui))
 
 ;; Mark smart mode line theme as safe
 (setq sml/no-confirm-load-theme t)
