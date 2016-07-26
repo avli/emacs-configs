@@ -36,10 +36,11 @@
 (setq sml/no-confirm-load-theme t)
 
 ;; Setup smart mode line
-(defun setup-sml ()
-  (setq sml/theme 'dark)
+(when (display-graphic-p)
+  (defun setup-sml ()
+    (setq sml/theme 'dark)
   (sml/setup))
-(setup-sml)
+  (setup-sml))
 
 ;; Enable vertical mode for ido
 (ido-vertical-mode 1)
