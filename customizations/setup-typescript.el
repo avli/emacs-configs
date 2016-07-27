@@ -18,3 +18,6 @@
 
 ;; format options
 (setq tide-format-options '(:insertSpaceAfterFunctionKeywordForAnonymousFunctions t :placeOpenBraceOnNewLineForFunctions nil))
+
+;; automatically close curly braces
+(add-hook 'typescript-mode-hook (lambda () (local-set-key (kbd "{") 'c-open-brace)))

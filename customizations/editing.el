@@ -47,6 +47,16 @@
 (global-set-key (kbd "C-o") 'vi-open-line-above)
 (global-set-key (kbd "C-c o") 'vi-open-line-below)
 
+;; Automatically insert close curly brace in C-like languages
+(defun c-open-brace ()
+  (insert "{")
+  (newline)
+  (insert "}")
+  (indent-according-to-mode)
+  (previous-line)
+  (end-of-line)
+  (newline-and-indent))
+
 ;; Change font size with C-+ and C--. Much better than default C-x C-+
 ;; and C-x C--!
 (global-set-key (kbd "C-+") 'text-scale-increase)
