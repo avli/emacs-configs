@@ -1,5 +1,5 @@
 (if (display-graphic-p)
-    (load-theme 'solarized-dark 't)
+    (load-theme 'wombat 't)
   (load-theme 'default-dark 't))
 
 ;; Turn off menu bar in console
@@ -19,7 +19,7 @@
 ;; Set fonts for different OS
 (cond
  ((string-equal system-type "darwin")
-  (setq default-frame-alist '((font . "Menlo-12"))))
+  (setq default-frame-alist '((font . "Monaco-12"))))
  ((string-equal system-type "gnu/linux")
   ((setq default-frame-alist '((font . "DejaVu Sans Mono-12"))))))
 
@@ -67,12 +67,14 @@
 ;; Match company tooltip colors with wombat theme
 (with-eval-after-load 'company
   (progn
-    ;; (set-face-attribute 'company-scrollbar-bg nil :background "#424242")
-    ;; (set-face-attribute 'company-scrollbar-fg nil :background "#303030")
-    ;; (set-face-attribute 'company-tooltip nil :background "#343434" :foreground "#857b6f")
-    ;; (set-face-attribute 'company-tooltip-selection nil :background "#384048" :foreground "#a0a8b0")
-    ;; (set-face-attribute 'company-tooltip-annotation nil :foreground "lime green")
-    ;; (set-face-attribute 'company-tooltip-common nil :foreground "#8ac6f2")
+    (set-face-attribute 'company-tooltip nil :foreground "#ffffd7" :background "#444444")
+    (set-face-attribute 'company-tooltip-selection nil :foreground "#080808" :background "#cae982")
+    (set-face-attribute 'company-scrollbar-bg nil :background "grey60")
+    (set-face-attribute 'company-scrollbar-fg nil :background "grey32")
+    (set-face-attribute 'company-tooltip-common nil :foreground "#cae982" :underline 't)
+    (set-face-attribute 'company-tooltip-selection nil :foreground "black")
+    (set-face-attribute 'company-tooltip-common-selection nil :foreground "black")
+    (set-face-attribute 'company-tooltip-annotation nil :foreground "#8ac6f2")
     (set-face-attribute 'company-tooltip-annotation-selection nil :inherit 'company-tooltip-selection)
 ))
 
