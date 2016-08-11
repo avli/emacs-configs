@@ -49,6 +49,7 @@
 
 ;; Automatically insert close curly brace in C-like languages
 (defun c-open-brace ()
+  (interactive)
   (insert "{")
   (newline)
   (insert "}")
