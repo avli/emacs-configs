@@ -76,9 +76,6 @@
     ;; Fuzzy navigation through Emacs commands
     smex
 
-    ;; An apropriate color theme
-    solarized-theme
-
     ;; Smart mode line
     smart-mode-line
 

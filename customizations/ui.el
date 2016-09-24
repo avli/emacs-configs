@@ -1,5 +1,5 @@
 (if (display-graphic-p)
-    (load-theme 'wombat 't)
+    (load-theme 'deeper-blue 't)
   (load-theme 'default-dark 't))
 
 ;; Turn off menu bar in console
@@ -23,24 +23,17 @@
  ((string-equal system-type "gnu/linux")
   ((setq default-frame-alist '((font . "DejaVu Sans Mono-12"))))))
 
+;; Increase the line spacing
+(setq-default line-spacing 2)
+
 ;; Show line numbers when run in the graphical mode
 (when (display-graphic-p)
   (global-linum-mode 1))
 
-;; Set size and color of line numbers
+;; Set size of line numbers
 (defun setup-linum-ui ()
-  (set-face-attribute 'linum nil :height 0.7 :foreground "SteelBlue"))
+  (set-face-attribute 'linum nil :height 0.7))
 (when (display-graphic-p) (setup-linum-ui))
-
-;; Mark smart mode line theme as safe
-(setq sml/no-confirm-load-theme t)
-
-;; Setup smart mode line
-(when (display-graphic-p)
-  (defun setup-sml ()
-    (setq sml/theme 'dark)
-  (sml/setup))
-  (setup-sml))
 
 ;; Enable vertical mode for ido
 (ido-vertical-mode 1)
@@ -63,35 +56,6 @@
 (progn (add-hook 'comint-preoutput-filter-functions 'xterm-color-filter)
        (setq comint-output-filter-functions (remove 'ansi-color-process-output comint-output-filter-functions))
        (setq font-lock-unfontify-region-function 'xterm-color-unfontify-region))
-
-;; Match company tooltip colors with wombat theme
-(with-eval-after-load 'company
-  (progn
-    (set-face-attribute 'company-tooltip nil :foreground "#ffffd7" :background "#444444")
-    (set-face-attribute 'company-tooltip-selection nil :foreground "#080808" :background "#cae982")
-    (set-face-attribute 'company-scrollbar-bg nil :background "grey60")
-    (set-face-attribute 'company-scrollbar-fg nil :background "grey32")
-    (set-face-attribute 'company-tooltip-common nil :foreground "#cae982" :underline 't)
-    (set-face-attribute 'company-tooltip-selection nil :foreground "black")
-    (set-face-attribute 'company-tooltip-common-selection nil :foreground "black")
-    (set-face-attribute 'company-tooltip-annotation nil :foreground "#8ac6f2")
-    (set-face-attribute 'company-tooltip-annotation-selection nil :inherit 'company-tooltip-selection)
-))
-
-;; Function for toggling dark and light theme
-(defun toggle-dark-light-theme ()
-  (interactive)
-  (if (member 'solarized-dark custom-enabled-themes)
-      (progn
-	(disable-theme 'solarized-dark)
-	(load-theme 'solarized-light t)
-	(setup-linum-ui)
-	(setup-sml))
-    (progn
-      (disable-theme 'solarized-light)
-      (load-theme 'solarized-dark t)
-      (setup-linum-ui)
-      (setup-sml))))
 
 ;; C-x l for toggle themes
 (global-set-key (kbd "C-x l") 'toggle-dark-light-theme)
