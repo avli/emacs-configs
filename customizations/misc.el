@@ -22,7 +22,3 @@
 ;; load it
 (when (file-exists-p custom-file)
   (load custom-file))
-
-;; Enable company in the shell mode. Company hints commands and file
-;; names, which is useful
-(add-hook 'shell-mode-hook 'company-mode)

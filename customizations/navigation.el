@@ -28,3 +28,9 @@
 
 ;; Call smex by M-x
 (global-set-key (kbd "M-x") 'smex)
+
+;; Turn on "go to recent file" functionality
+(recentf-mode 1)
+
+;; Call recent files list with C-x r
+(global-set-key (kbd "C-x r") 'recentf-open-files)
