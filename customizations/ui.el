@@ -1,5 +1,5 @@
 (if (display-graphic-p)
-    (load-theme 'deeper-blue 't)
+    (load-theme 'tango-dark 't)
   (load-theme 'default-dark 't))
 
 ;; Turn off menu bar in console
@@ -19,7 +19,7 @@
 ;; Set fonts for different OS
 (cond
  ((string-equal system-type "darwin")
-  (setq default-frame-alist '((font . "Monaco-12"))))
+  (setq default-frame-alist '((font . "Menlo-12"))))
  ((string-equal system-type "gnu/linux")
   ((setq default-frame-alist '((font . "DejaVu Sans Mono-12"))))))
 

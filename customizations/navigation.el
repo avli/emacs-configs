@@ -34,3 +34,6 @@
 
 ;; Call recent files list with C-x r
 (global-set-key (kbd "C-x r") 'recentf-open-files)
+
+;; Finally enable helm
+(helm-mode 1)

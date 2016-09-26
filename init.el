@@ -40,14 +40,6 @@
     ;; Making handling lisp expressions easier
     paredit
 
-    ;; Autocompletion for Emacs. May be annoying sometimes so let's
-    ;; use it only when it's necesary
-    company
-
-    ;; Anaconda data sourse for company mode. This allows company to
-    ;; use anaconda as a source of completion
-    company-anaconda
-
     ;; Markdown support
     markdown-mode
 
@@ -56,6 +48,11 @@
     ;; OS X you need to consult with the following guide:
     ;; https://gist.github.com/mahmoudimus/3ccaf9811e50fcd2a410
     anaconda-mode
+
+    ;; Helm is an Emacs framework for incremental completions and
+    ;; narrowing selections.  I use it for navigating through a
+    ;; completion list and imenu items.
+    helm
 
     ;; Syntax highlighting for Docker files
     dockerfile-mode
@@ -68,10 +65,6 @@
 
     ;; XTerm colors support. Important for the integration with zsh
     xterm-color
-
-    ;; A useful plugin for navigation through the code similar to
-    ;; Vim's tagbar
-    imenu-list
 
     ;; Fuzzy navigation through Emacs commands
     smex
