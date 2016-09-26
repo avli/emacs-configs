@@ -5,8 +5,7 @@
 (defun setup-tide-mode ()
   (interactive)
   (tide-setup)
-  (eldoc-mode 1)
-  (company-mode 1))
+  (eldoc-mode 1))
 
 ;; aligns annotation to the right hand side
 (setq company-tooltip-align-annotations t)
