@@ -23,8 +23,8 @@
 ;; projectile everywhere!
 (projectile-global-mode)
 
-;; Call imenu list by C-'
-(global-set-key (kbd "C-'") #'imenu-list-minor-mode)
+;; Call helm-imenu list by C-'
+(global-set-key (kbd "C-'") 'helm-imenu)
 
 ;; Call smex by M-x
 (global-set-key (kbd "M-x") 'smex)
