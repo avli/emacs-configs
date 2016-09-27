@@ -63,6 +63,9 @@
     ;; Haskell support
     haskell-mode
 
+    ;; Appropriate color theme
+    plan9-theme
+
     ;; XTerm colors support. Important for the integration with zsh
     xterm-color
 
