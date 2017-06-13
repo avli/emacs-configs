@@ -117,3 +117,4 @@
 (load "setup-python.el")
 (load "setup-text.el")
 (load "setup-typescript.el")
+(load "setup-cpp.el")
