@@ -23,7 +23,7 @@
     ;;
     ;; {:repl {:dependencies [[org.clojure/clojure "1.8.0"]
     ;;                        [org.clojure/tools.nrepl "0.2.12"]]
-    ;;         :plugins [[cider/cider-nrepl "0.11.0-snapshot"]]}}
+    ;;         :plugins [[cider/cider-nrepl "0.13.0"]]}}
     ;;
     ;; The versions may vary depend on Emacs cider version
     cider
