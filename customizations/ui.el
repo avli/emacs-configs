@@ -1,6 +1,15 @@
 (if (display-graphic-p)
-    (load-theme 'deeper-blue 't)
+    (load-theme 'lush 't)
   (load-theme 'default-dark 't))
+
+;; Don't confirm smart mode line themes loading
+(setq sml/no-confirm-load-theme t)
+
+;; Enable smart mode line
+(sml/setup)
+
+;; Set smart mode line dark sheme
+(setq sml/theme 'dark)
 
 ;; Turn off menu bar in console
 (unless (display-graphic-p)
@@ -16,12 +25,9 @@
 ;; Set cursor type to bar like in the Atom editor
 (setq-default cursor-type 'bar)
 
-;; Set fonts for different OS
-(cond
- ((string-equal system-type "darwin")
-  (setq default-frame-alist '((font . "Monaco-12"))))
- ((string-equal system-type "gnu/linux")
-  ((setq default-frame-alist '((font . "DejaVu Sans Mono-12"))))))
+;; Set the default font
+(when (window-system)
+  (set-default-font "Fira Code"))
 
 ;; Increase the line spacing
 (setq-default line-spacing 2)
@@ -59,3 +65,34 @@
 
 ;; C-x l for toggle themes
 (global-set-key (kbd "C-x l") 'toggle-dark-light-theme)
+
+;; Enable ligatures
+(let ((alist '((33 . ".\\(?:\\(?:==\\|!!\\)\\|[!=]\\)")
+               (35 . ".\\(?:###\\|##\\|_(\\|[#(?[_{]\\)")
+               (36 . ".\\(?:>\\)")
+               (37 . ".\\(?:\\(?:%%\\)\\|%\\)")
+               (38 . ".\\(?:\\(?:&&\\)\\|&\\)")
+               (42 . ".\\(?:\\(?:\\*\\*/\\)\\|\\(?:\\*[*/]\\)\\|[*/>]\\)")
+               (43 . ".\\(?:\\(?:\\+\\+\\)\\|[+>]\\)")
+               (45 . ".\\(?:\\(?:-[>-]\\|<<\\|>>\\)\\|[<>}~-]\\)")
+               (46 . ".\\(?:\\(?:\\.[.<]\\)\\|[.=-]\\)")
+               (47 . ".\\(?:\\(?:\\*\\*\\|//\\|==\\)\\|[*/=>]\\)")
+               (48 . ".\\(?:x[a-zA-Z]\\)")
+               (58 . ".\\(?:::\\|[:=]\\)")
+               (59 . ".\\(?:;;\\|;\\)")
+               (60 . ".\\(?:\\(?:!--\\)\\|\\(?:~~\\|->\\|\\$>\\|\\*>\\|\\+>\\|--\\|<[<=-]\\|=[<=>]\\||>\\)\\|[*$+~/<=>|-]\\)")
+               (61 . ".\\(?:\\(?:/=\\|:=\\|<<\\|=[=>]\\|>>\\)\\|[<=>~]\\)")
+               (62 . ".\\(?:\\(?:=>\\|>[=>-]\\)\\|[=>-]\\)")
+               (63 . ".\\(?:\\(\\?\\?\\)\\|[:=?]\\)")
+               (91 . ".\\(?:]\\)")
+               (92 . ".\\(?:\\(?:\\\\\\\\\\)\\|\\\\\\)")
+               (94 . ".\\(?:=\\)")
+               (119 . ".\\(?:ww\\)")
+               (123 . ".\\(?:-\\)")
+               (124 . ".\\(?:\\(?:|[=|]\\)\\|[=>|]\\)")
+               (126 . ".\\(?:~>\\|~~\\|[>=@~-]\\)")
+               )
+             ))
+  (dolist (char-regexp alist)
+    (set-char-table-range composition-function-table (car char-regexp)
+                          `([,(cdr char-regexp) 0 font-shape-gstring]))))
