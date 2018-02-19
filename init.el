@@ -79,6 +79,9 @@
     ;; Smart mode line
     smart-mode-line
 
+    ;; Color theme
+    solarized-theme
+
     ;; TypeScript facilities
     tide
     ))
