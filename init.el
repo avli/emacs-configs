@@ -113,6 +113,7 @@
 
 (load "setup-clojure.el")
 (load "setup-elisp.el")
+(load "setup-eshell.el")
 (load "setup-haskell.el")
 (load "setup-python.el")
 (load "setup-text.el")
