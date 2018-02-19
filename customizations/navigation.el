@@ -34,3 +34,6 @@
 
 ;; Call recent files list with C-x r
 (global-set-key (kbd "C-x r") 'recentf-open-files)
+
+;; Fire helm-imenu with C-c j
+(global-set-key (kbd "C-c j") 'helm-imenu)
