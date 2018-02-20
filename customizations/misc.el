@@ -28,3 +28,6 @@
 
 ;; Nyan mode
 (nyan-mode)
+
+;; Show changes in git repositories
+(global-git-gutter-mode 1)

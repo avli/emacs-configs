@@ -57,6 +57,9 @@
     ;; https://gist.github.com/mahmoudimus/3ccaf9811e50fcd2a410
     anaconda-mode
 
+    ;; Show changes in git repositories
+    git-gutter
+
     ;; Syntax highlighting for Docker files
     dockerfile-mode
 
