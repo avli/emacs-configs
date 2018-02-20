@@ -41,7 +41,8 @@
 
 ;; Set size of line numbers
 (defun setup-linum-ui ()
-  (set-face-attribute 'linum nil :height 0.7))
+  (set-face-attribute 'linum nil :height 0.7 :foreground "SteelBlue"))
+
 (when (display-graphic-p) (setup-linum-ui))
 
 ;; Enable vertical mode for ido
