@@ -15,6 +15,9 @@
 ;; Show column numbers in mode line
 (column-number-mode 1)
 
+;; Syntax checker
+(global-flycheck-mode 1)
+
 ;; comments
 (defun toggle-comment-dwim ()
   "comment or uncomment current region or line"
