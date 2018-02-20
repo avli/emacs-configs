@@ -22,3 +22,9 @@
 ;; load it
 (when (file-exists-p custom-file)
   (load custom-file))
+
+;; Enable symon (Emacs system monitor)
+(symon-mode)
+
+;; Nyan mode
+(nyan-mode)

@@ -73,6 +73,9 @@
     ;; Vim's tagbar
     imenu-list
 
+    ;; Nyan cat!!!
+    nyan-mode
+
     ;; Fuzzy navigation through Emacs commands
     smex
 
@@ -81,6 +84,9 @@
 
     ;; Color theme
     solarized-theme
+
+    ;; A tiny system monitor for Emacs
+    symon
 
     ;; TypeScript facilities
     tide
