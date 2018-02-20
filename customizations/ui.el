@@ -43,6 +43,9 @@
 (defun setup-linum-ui ()
   (set-face-attribute 'linum nil :height 0.7 :foreground "SteelBlue"))
 
+;; Match company tooltip colors with theme
+(set-face-attribute 'company-tooltip-annotation-selection nil :inherit 'company-tooltip-selection)
+
 (when (display-graphic-p) (setup-linum-ui))
 
 ;; Enable vertical mode for ido
