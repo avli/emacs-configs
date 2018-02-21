@@ -44,6 +44,7 @@
   (set-face-attribute 'linum nil :height 0.7 :foreground "SteelBlue"))
 
 ;; Match company tooltip colors with theme
+(require 'company)
 (set-face-attribute 'company-tooltip-annotation-selection nil :inherit 'company-tooltip-selection)
 
 (when (display-graphic-p) (setup-linum-ui))
