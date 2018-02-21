@@ -93,6 +93,9 @@
 
     ;; TypeScript facilities
     tide
+
+    ;; Vim keybindings with Evil mode
+    evil
     ))
 
 ;; Install packages if not installed already

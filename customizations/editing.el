@@ -126,3 +126,6 @@
 ;; See: https://gist.github.com/avli/57d191d92a6ad8b19be9d15cc55132b7
 (set-default 'ispell-aspell-dict-dir "~/.emacs.d")
 (set-default 'ispell-dictionary "ru")
+
+;; Finally - evil mode!
+(evil-mode 1)
