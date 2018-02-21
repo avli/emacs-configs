@@ -71,5 +71,16 @@
        (setq comint-output-filter-functions (remove 'ansi-color-process-output comint-output-filter-functions))
        (setq font-lock-unfontify-region-function 'xterm-color-unfontify-region))
 
+;; Function for toggling dark and light theme
+(defun toggle-dark-light-theme ()
+  (interactive)
+  (if (member 'solarized-dark custom-enabled-themes)
+      (progn
+	(disable-theme 'solarized-dark)
+	(load-theme 'solarized-light t))
+    (progn
+      (disable-theme 'solarized-light)
+      (load-theme 'solarized-dark t))))
+
 ;; C-x l for toggle themes
 (global-set-key (kbd "C-x l") 'toggle-dark-light-theme)
