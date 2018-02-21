@@ -1,0 +1,5 @@
+name ru
+charset koi8-r
+affix ru
+affix-compress true
+special ' -*-
