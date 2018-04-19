@@ -23,8 +23,5 @@
 (when (file-exists-p custom-file)
   (load custom-file))
 
-;; Nyan mode
-(nyan-mode)
-
 ;; Show changes in git repositories
 (global-git-gutter-mode 1)
