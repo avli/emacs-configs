@@ -129,4 +129,4 @@
 (set-default 'ispell-dictionary "ru")
 
 ;; Finally - evil mode!
-(evil-mode 1)
+;; (evil-mode 1)
