@@ -88,9 +88,6 @@
     ;; Color theme
     solarized-theme
 
-    ;; A tiny system monitor for Emacs
-    symon
-
     ;; TypeScript facilities
     tide
 
