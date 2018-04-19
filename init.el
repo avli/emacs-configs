@@ -76,8 +76,9 @@
     ;; Vim's tagbar
     imenu-list
 
-    ;; Nyan cat!!!
-    nyan-mode
+    ;; The latest version of python-mode to replace one that comes
+    ;; with Aquamacs
+    python-mode
 
     ;; Fuzzy navigation through Emacs commands
     smex

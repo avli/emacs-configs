@@ -2,6 +2,12 @@
 ;; Python
 ;;;;
 
+;; Activate the version of python-mode from melpa
+(require 'python)
+
+;; Fix warning about Python interpreter and readline, blah-blah-blah
+(setq python-shell-completion-native-enable nil)
+
 ;; Enable company mode. Company mode will use anaconda for
 ;; suggestions. The first step adds anaconda to company backends, the
 ;; second activates company when switching to python mode
