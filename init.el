@@ -76,10 +76,6 @@
     ;; Vim's tagbar
     imenu-list
 
-    ;; The latest version of python-mode to replace one that comes
-    ;; with Aquamacs
-    python-mode
-
     ;; Fuzzy navigation through Emacs commands
     smex
 
@@ -132,3 +128,6 @@
 (load "setup-text.el")
 (load "setup-typescript.el")
 (load "setup-cpp.el")
+
+(when (boundp 'aquamacs-version)
+  (load "aquamacs.el"))
