@@ -22,6 +22,9 @@
 ;; Disable tool bar
 (tool-bar-mode -1)
 
+;; Disable tabs
+(tabbar-mode -1)
+
 ;; Set cursor type to bar like in the Atom editor
 (setq-default cursor-type 'bar)
 
