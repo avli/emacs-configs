@@ -77,10 +77,12 @@
   (if (member 'solarized-dark custom-enabled-themes)
       (progn
 	(disable-theme 'solarized-dark)
-	(load-theme 'solarized-light t))
+	(load-theme 'solarized-light t)
+	(setup-linum-ui))
     (progn
       (disable-theme 'solarized-light)
-      (load-theme 'solarized-dark t))))
+      (load-theme 'solarized-dark t)
+      (setup-linum-ui))))
 
 ;; C-x l for toggle themes
 (global-set-key (kbd "C-x l") 'toggle-dark-light-theme)
