@@ -37,11 +37,11 @@
 
 ;; Show line numbers when run in the graphical mode
 (when (display-graphic-p)
-  (global-linum-mode 1))
+  (global-display-line-numbers-mode 1))
 
 ;; Set size of line numbers
 (defun setup-linum-ui ()
-  (set-face-attribute 'linum nil :height 0.7 :foreground "SteelBlue"))
+  (set-face-attribute 'line-number nil :height 0.7 :foreground "SteelBlue"))
 
 ;; Match company tooltip colors with theme
 (require 'company)
