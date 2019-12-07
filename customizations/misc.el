@@ -25,3 +25,12 @@
 
 ;; Show changes in git repositories
 (global-git-gutter-mode 1)
+
+;; zsh is the default shell on macOS since Catalina. The shipped bash
+;; version shows an annoying message that suggests switching on zsh.
+;; Let's assume that if there's a bash version from brew, the user
+;; wants to use it instead of zsh. At least I do!
+(let ((brew-bash "/usr/local/bin/bash"))
+  (if (and (file-exists-p brew-bash)
+	   (eq system-type 'darwin))
+      (setq explicit-shell-file-name brew-bash)))
