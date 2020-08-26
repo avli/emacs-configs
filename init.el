@@ -63,9 +63,6 @@
     ;; Syntax highlighting for Docker files
     dockerfile-mode
 
-    ;; Cool vertical mode for ido
-    ido-vertical-mode
-
     ;; Haskell support
     haskell-mode
 

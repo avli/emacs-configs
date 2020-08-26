@@ -49,9 +49,6 @@
 
 (when (display-graphic-p) (setup-linum-ui))
 
-;; Enable vertical mode for ido
-(ido-vertical-mode 1)
-
 ;; Full path in title bar
 (setq-default frame-title-format "%b (%f)")
 
