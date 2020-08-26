@@ -26,3 +26,5 @@ recentf
 
 ede-projects.el
 srecode-map.el
+
+transient/*
