@@ -80,7 +80,7 @@
     smart-mode-line
 
     ;; Color theme
-    solarized-theme
+    color-theme-sanityinc-tomorrow
 
     ;; TypeScript facilities
     tide
