@@ -2,14 +2,8 @@
     (load-theme 'sanityinc-tomorrow-night 't)
   (load-theme 'default-dark 't))
 
-;; Don't confirm smart mode line themes loading
-(setq sml/no-confirm-load-theme t)
-
-;; Set smart mode line matching the color scheme
-(setq sml/theme 'respectful)
-
-;; Enable smart mode line
-(sml/setup)
+;; Enable powerline
+(powerline-default-theme)
 
 ;; Turn off menu bar in console
 (unless (display-graphic-p)

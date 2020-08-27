@@ -76,8 +76,8 @@
     ;; Fuzzy navigation through Emacs commands
     smex
 
-    ;; Smart mode line
-    smart-mode-line
+    ;; Powerline theme for modeline
+    powerline
 
     ;; Color theme
     color-theme-sanityinc-tomorrow
