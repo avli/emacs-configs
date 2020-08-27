@@ -125,8 +125,8 @@
 ;; Use own dictionary that supports both English and Russian.
 ;; See: https://gist.github.com/avli/57d191d92a6ad8b19be9d15cc55132b7
 (set-default 'ispell-program-name "aspell")
-(set-default 'ispell-aspell-dict-dir "~/.emacs.d")
-(set-default 'ispell-dictionary "ru")
+;; (set-default 'ispell-aspell-dict-dir "~/.emacs.d")
+;; (set-default 'ispell-dictionary "ru")
 
 ;; Finally - evil mode!
 ;; (evil-mode 1)
