@@ -3,7 +3,8 @@
   (load-theme 'default-dark 't))
 
 ;; Enable powerline
-(powerline-default-theme)
+(if (display-graphic-p)
+    (powerline-default-theme))
 
 ;; Turn off menu bar in console
 (unless (display-graphic-p)
