@@ -87,6 +87,9 @@
 
     ;; Vim keybindings with Evil mode
     evil
+
+    ;; Kotlin syntax highlighting
+    kotlin-mode
     ))
 
 ;; Install packages if not installed already
