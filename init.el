@@ -90,6 +90,9 @@
 
     ;; Kotlin syntax highlighting
     kotlin-mode
+
+    ;; Dealing with parens
+    smartparens
     ))
 
 ;; Install packages if not installed already
