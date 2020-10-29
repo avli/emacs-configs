@@ -131,6 +131,7 @@
 (load "setup-text.el")
 (load "setup-typescript.el")
 (load "setup-cpp.el")
+(load "setup-java.el")
 
 (when (boundp 'aquamacs-version)
   (load "aquamacs.el"))
