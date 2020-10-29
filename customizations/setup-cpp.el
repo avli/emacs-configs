@@ -10,5 +10,5 @@
 ;; Enable company mode
 (add-hook 'c-mode-hook 'company-mode)
 
-;; Enable smart parents
+;; Enable smart parens
 (add-hook 'c-mode-hook 'smartparens-mode)
