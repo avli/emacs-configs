@@ -1,10 +1,13 @@
 (if (display-graphic-p)
-    (load-theme 'sanityinc-tomorrow-night 't)
+    (load-theme 'solarized-dark 't)
   (load-theme 'default-dark 't))
 
 ;; Enable powerline
 (if (display-graphic-p)
     (powerline-default-theme))
+
+;; Set smart mode line dark sheme
+(setq sml/theme 'dark)
 
 ;; Turn off menu bar in console
 (unless (display-graphic-p)
@@ -65,14 +68,14 @@
 ;; Function for toggling dark and light theme
 (defun toggle-dark-light-theme ()
   (interactive)
-  (if (member 'sanityinc-tomorrow-night custom-enabled-themes)
+  (if (member 'solarized-dark custom-enabled-themes)
       (progn
-	(disable-theme 'sanityinc-tomorrow-night)
-	(load-theme 'sanityinc-tomorrow-day t)
+	(disable-theme 'solarized-dark)
+	(load-theme 'solarized-light t)
 	(setup-linum-ui))
     (progn
-      (disable-theme 'sanityinc-tomorrow-day)
-      (load-theme 'sanityinc-tomorrow-night t)
+      (disable-theme 'solarized-light)
+      (load-theme 'solarized-dark t)
       (setup-linum-ui))))
 
 ;; C-x l for toggle themes
