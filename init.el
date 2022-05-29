@@ -80,7 +80,7 @@
     powerline
 
     ;; Color theme
-    solarized-theme
+    color-theme-sanityinc-tomorrow
 
     ;; TypeScript facilities
     tide
