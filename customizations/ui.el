@@ -25,7 +25,9 @@
  ((string-equal system-type "darwin")
   (setq default-frame-alist '((font . "Menlo-12"))))
  ((string-equal system-type "gnu/linux")
-  ((setq default-frame-alist '((font . "DejaVu Sans Mono-12"))))))
+  (setq default-frame-alist '((font . "DejaVu Sans Mono-12"))))
+ ((string-equal system-type "windows-nt")
+  (setq default-frame-alist '((font . "Consolas-11")))))
 
 ;; Increase the line spacing
 (setq-default line-spacing 2)
