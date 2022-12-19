@@ -44,7 +44,15 @@
 (require 'company)
 (set-face-attribute 'company-tooltip-annotation-selection nil :inherit 'company-tooltip-selection)
 
-(when (display-graphic-p) (setup-linum-ui))
+(when (display-graphic-p)
+  (setup-linum-ui)
+  (add-to-list 'initial-frame-alist '(width . 106))
+  (add-to-list 'initial-frame-alist '(height . 60))
+  (add-to-list 'initial-frame-alist '(left . 50))
+  (add-to-list 'initial-frame-alist '(righth . 50))
+  )
+
+(setq default-frame-alist initial-frame-alist)
 
 ;; Full path in title bar
 (setq-default frame-title-format "%b (%f)")
