@@ -10,6 +10,11 @@
 (unless (display-graphic-p)
   (menu-bar-mode -1))
 
+;; Also turn off the menu bar on Linux. If it is active,
+;; the Window shrinks on M-x.
+(when (eq system-type 'gnu/linux)
+  (menu-bar-mode -1))
+
 ;; Don't show native OS scroll bars
 (when (fboundp 'scroll-bar-mode)
   (scroll-bar-mode -1))
