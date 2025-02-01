@@ -93,6 +93,9 @@
 
     ;; Dealing with parens
     smartparens
+
+    ;; Go support
+    go-mode
     ))
 
 ;; Install packages if not installed already
